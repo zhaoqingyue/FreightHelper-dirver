@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="26%h"
+            app:layout_paddingTopPercent="1.5%h"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="20%w"
+                app:layout_widthPercent="50%w"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/matiquan_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="1.5%h"
+                app:layout_marginTopPercent="3.5%h"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_horizontal"
+                android:text="Android V1.0.0"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- 版本号 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            app:layout_marginTopPercent="2%h"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_name"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text="v1.0.1"
+                android:textColor="@color/text_normal_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="@string/version_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 审图号 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_trial_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_trial"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_trial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text="123456"
+                android:textColor="@color/text_normal_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="@string/version_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- ISBN -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_isbn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_isbn"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text="isbn"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9.5%"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4%w"
+                android:text="@string/version_drawup"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4%w"
+                android:text="@string/version_publish"
+                android:textColor="@color/text_normal_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="@string/version_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- 官方网站 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_web_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_web"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text="www.careland.com"
+                android:textColor="@color/text_normal_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="@string/version_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 马蹄圈物流云平台 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_platform_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_platform"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text=""
+                android:textColor="@color/text_normal_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="@string/version_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 客服电话 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/version_customer_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/version_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/version_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/version_customer_phone"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/version_customer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/version_marginRightPercent"
+                app:layout_textSizePercent="4.5%w"
+                android:text="0755-12345678"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

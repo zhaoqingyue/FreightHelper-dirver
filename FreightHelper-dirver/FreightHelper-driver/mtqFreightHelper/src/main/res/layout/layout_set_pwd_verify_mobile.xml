@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <!-- 手机号码 -->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/set_pwd_mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/set_pwd_heightPercent"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/set_pwd_edit_mobile_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="@string/set_pwd_marginLeftPercent"
+            app:layout_textSizePercent="5%w"
+            android:text="@string/set_pwd_mobile"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/set_pwd_edit_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/set_pwd_edit_mobile_pre"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginRightPercent="@string/set_pwd_marginRightPercent"
+            app:layout_textSizePercent="5%w"
+            android:textCursorDrawable="@drawable/shape_edit_cursor"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            
+            android:inputType="number"
+            android:text=""
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/edittext_normal_color"
+            android:textColorHint="@color/edittext_hint_color" />
+        <!-- android:hint="@string/set_pwd_mobile_hint" -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            app:layout_marginLeftPercent="@string/set_pwd_line_marginLeftPercent"
+            android:background="@color/windows_color" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- 验证码 -->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/set_pwd_heightPercent"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/set_pwd_edit_vericode_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="@string/set_pwd_marginLeftPercent"
+            app:layout_textSizePercent="5%w"
+            android:text="@string/set_pwd_vericode"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/set_pwd_edit_vericode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/set_pwd_btn_vericode"
+            android:layout_toRightOf="@+id/set_pwd_edit_vericode_pre"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_textSizePercent="5%w"
+            android:textCursorDrawable="@drawable/shape_edit_cursor"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:textColor="@color/edittext_normal_color"
+            android:textColorHint="@color/edittext_hint_color" />
+
+        <TextView
+            android:id="@+id/set_pwd_btn_vericode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="@string/set_pwd_marginRightPercent"
+            app:layout_textSizePercent="5%w"
+            android:enabled="false"
+            android:text="@string/set_pwd_get_vericode"
+            android:textColor="@drawable/selector_vericode_text" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- 下一步 -->
+
+    <Button
+        android:id="@+id/set_pwd_btn_next"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="@string/set_pwd_heightPercent"
+        app:layout_marginTopPercent="6%h"
+        app:layout_textSizePercent="6%w"
+        app:layout_widthPercent="@string/set_pwd_btn_widthPercent"
+        android:background="@drawable/selector_bth_red_bg"
+        android:textColor="@drawable/selector_bth_red_text"
+        android:enabled="false"
+        android:text="@string/set_pwd_next"
+         />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

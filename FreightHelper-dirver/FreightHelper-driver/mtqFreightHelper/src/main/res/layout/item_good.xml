@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_goodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:layout_textSizePercent="4.5%sw"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/text_normal_color" />
+
+
+
+    <TextView
+       android:id="@+id/tv_goodnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_goodname"
+        app:layout_paddingBottomPercent="0%w"
+        app:layout_paddingLeftPercent="0%w"
+        app:layout_paddingRightPercent="0%w"
+        app:layout_textSizePercent="4.5%sw"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/black_text" />
+
+
+    <TextView
+        android:id="@+id/tv_goodname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toLeftOf="@+id/tv_goodnum2"
+        app:layout_textSizePercent="4.5%sw"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/text_normal_color" />
+
+
+
+    <TextView
+        android:id="@+id/tv_goodnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        app:layout_paddingBottomPercent="0%w"
+        app:layout_paddingLeftPercent="0%w"
+        app:layout_paddingRightPercent="0%w"
+        app:layout_textSizePercent="4.5%sw"
+        android:text=""
+        android:textColor="@color/black_text" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

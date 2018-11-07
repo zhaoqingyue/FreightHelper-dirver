@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_msg_schedule_general_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginBottomPercent="1.5%w"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_marginRightPercent="3%w"
+        app:layout_marginTopPercent="1.5%w"
+        app:layout_paddingBottomPercent="3%w"
+        app:layout_paddingLeftPercent="0%w"
+        app:layout_paddingRightPercent="0%w"
+        app:layout_paddingTopPercent="0%w"
+        android:background="@drawable/round_background" >
+
+        <ImageView
+            android:id="@+id/business_msg_schedule_general_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            app:layout_paddingBottomPercent="3%w"
+            app:layout_paddingLeftPercent="4.5%w"
+            app:layout_paddingRightPercent="3%w"
+            app:layout_paddingTopPercent="3%w"
+            app:layout_widthPercent="11.5%w"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_feedback_time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/business_msg_schedule_general_item_icon"
+            android:layout_alignTop="@+id/business_msg_schedule_general_item_icon"
+            android:layout_toRightOf="@+id/business_msg_schedule_general_item_icon"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center_vertical"
+            android:paddingLeft="0dp"
+            android:text="2017-10-10 00:00"
+            android:textColor="@color/black1" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/business_msg_schedule_general_item_icon"
+            android:background="@color/tasklist_stroke" />
+
+        <View
+            android:id="@+id/v_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/v_line"
+            app:layout_heightPercent="1.5%w" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/prl_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line2"
+            app:layout_paddingBottomPercent="1.5%w"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            app:layout_paddingTopPercent="1.5%w" >
+
+            <com.yunbaba.freighthelper.ui.customview.TagFlowLayout
+                android:id="@+id/gv_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tag_gravity="left" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/prl_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prl_rs"
+            app:layout_paddingBottomPercent="1.5%w"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            app:layout_paddingTopPercent="1.5%w" >
+
+            <com.yunbaba.freighthelper.ui.customview.NoScrollGridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prl_pic"
+            app:layout_paddingBottomPercent="1.5%w"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            app:layout_paddingTopPercent="1.5%w"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center_vertical"
+            android:paddingLeft="0dp"
+            android:text="xxxxxxxx"
+            android:textColor="@color/black1" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

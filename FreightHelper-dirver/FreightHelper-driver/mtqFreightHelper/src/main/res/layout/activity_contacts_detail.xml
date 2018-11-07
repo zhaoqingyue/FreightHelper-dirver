@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="26%h"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/contacts_detail_first"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="20%w"
+                app:layout_textSizePercent="10%w"
+                app:layout_widthPercent="20%w"
+                android:background="@drawable/shape_circle_bg_gray"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/contacts_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="8%h"
+                app:layout_textSizePercent="5.5%w"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/black" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- 车队 -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9%h"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingRightPercent="5%w"
+                app:layout_textSizePercent="4.5%w"
+                android:gravity="center_vertical"
+                android:text="@string/contacts_detail_team"
+                android:textColor="@color/black1" />
+
+            <TextView
+                android:id="@+id/contacts_detail_team"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_textSizePercent="4.5%w"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+             android:visibility="gone"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                app:layout_marginLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_marginRightPercent="@string/common_paddingRightPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 电话 -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="9%h"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_paddingRightPercent="5%w"
+               app:layout_textSizePercent="4.5%w"
+                android:gravity="center_vertical"
+                android:text="@string/contacts_detail_phone"
+                android:textColor="@color/black1" />
+
+            <TextView
+                android:id="@+id/contacts_detail_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               app:layout_textSizePercent="4.5%w"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/black" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_paddingBottomPercent="3%h"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingTopPercent="2%h"
+            app:layout_textSizePercent="4%w"
+            android:text="@string/contacts_detail_warn"
+            android:textColor="@color/black1" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/contacts_detail_call"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="10%h"
+            app:layout_marginTopPercent="4%h"
+            app:layout_widthPercent="84%w"
+            android:background="@drawable/selector_btn_green_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                app:layout_heightPercent="33%h"
+                app:layout_marginRightPercent="5.5%w"
+                app:layout_widthPercent="33%h"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_detail_call" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_textSizePercent="5.5%w"
+                android:gravity="center_vertical"
+                android:text="@string/contacts_detail_call"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

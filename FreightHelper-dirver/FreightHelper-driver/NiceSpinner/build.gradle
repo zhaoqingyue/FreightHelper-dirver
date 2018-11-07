@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.0-alpha04'
+    }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    compileSdkVersion 25
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+    }
+}
+
+dependencies {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.google.com' }
+    }
+    compile 'com.android.support:appcompat-v7:25.0.0'
+}

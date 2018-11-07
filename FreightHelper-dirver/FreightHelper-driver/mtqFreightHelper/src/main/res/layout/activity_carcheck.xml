@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent" >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/ll_check"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="match_parent" >
+            
+            
+            
+
+            <ImageView
+                android:id="@+id/iv_car_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="60%w"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginRightPercent="5%w"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_car_scan_center"
+                android:visibility="visible" />
+            
+             <ImageView
+                android:id="@+id/iv_scan"
+                 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/iv_car_center"
+                app:layout_heightPercent="60%w"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginRightPercent="5%w"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_scan_line"
+                android:visibility="gone" />
+             
+             
+             <View
+                 android:layout_below="@+id/iv_car_center"
+                  android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:layout_alignParentBottom="true"
+                 android:background="#fe000000"
+                 
+                 />
+           
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_recheck"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                app:layout_marginTopPercent="2%w"
+                app:layout_textSizePercent="4.5%w"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="正在检测..."
+                android:textColor="@color/tasklist_text_color"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_recheck"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                app:layout_textSizePercent="10%w"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0%"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_recheck"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                app:layout_heightPercent="13%w"
+                app:layout_marginBottomPercent="9%h"
+                app:layout_marginLeftPercent="13%w"
+                app:layout_marginRightPercent="13%w"
+                app:layout_marginTopPercent="7%w"
+                app:layout_textSizePercent="4.5%w"
+                app:layout_widthPercent="40%w"
+                android:background="@drawable/round_background_appcolor_full"
+                android:gravity="center"
+                android:text="重新体检"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/ll_checkresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginTopPercent="9%sh"
+            android:background="#fe000000"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_car_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                app:layout_heightPercent="60%w"
+                app:layout_marginBottomPercent="5%w"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_marginTopPercent="5%w"
+                android:background="#000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_car_scan_center"
+                android:visibility="visible" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_resultdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lv_result"
+                
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/tasklist_stroke" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_paddingBottomPercent="3%w"
+                    app:layout_paddingLeftPercent="6%w"
+                    app:layout_paddingRightPercent="6%w"
+                    app:layout_paddingTopPercent="2%w" 
+                    android:background="#20ffffff"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_resultdesc_error"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        app:layout_heightPercent="5%w"
+                        app:layout_marginRightPercent="3%w"
+                        app:layout_widthPercent="5%w"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_net_warning"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_resultdesc_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/iv_resultdesc_error"
+                        app:layout_textSizePercent="5%w"
+                        android:gravity="left|center_vertical"
+                        android:text="正常"
+                        android:textColor="@color/app_color" />
+
+                    <TextView
+                        android:id="@+id/tv_resultdesc_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_resultdesc_title"
+                        android:layout_toRightOf="@+id/iv_resultdesc_error"
+                        app:layout_marginTopPercent="1%w"
+                        app:layout_textSizePercent="4%w"
+                        android:gravity="left|center_vertical"
+                        android:text="网络不给力,连接失败"
+                        android:textColor="@color/white" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ListView
+                android:id="@+id/lv_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_recheck"
+                android:layout_below="@+id/iv_car_top"
+                android:background="@color/windows_color"
+                android:divider="#ffffffff"
+                android:dividerHeight="1px"
+                android:scrollbars="none" >
+            </ListView>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_recheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/windows_color"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_recheck2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="15%w"
+                    app:layout_marginBottomPercent="3%w"
+                    app:layout_marginLeftPercent="7%w"
+                    app:layout_marginRightPercent="7%w"
+                    app:layout_marginTopPercent="3%w"
+                    app:layout_textSizePercent="5%w"
+                    android:background="@drawable/round_background_appcolor_full"
+                    android:gravity="center"
+                    android:text="重新体检"
+                    android:textColor="@color/white" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/pb_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginTopPercent="9%sh"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/app_color2"
+                android:clickable="true"
+                android:indeterminate="false" />
+            
+              
+            
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="9%sh"
+        android:background="@color/black"
+        android:clipToPadding="true" >
+
+        <ImageView
+            android:id="@+id/iv_titleleft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_widthPercent="100%h"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/iv_titleleft2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingTopPercent="30%h"
+            app:layout_paddingBottomPercent="30%h"
+            app:layout_paddingLeftPercent="35%h"
+            app:layout_paddingRightPercent="40%h"
+            app:layout_widthPercent="100%h"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_textSizePercent="35%h"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="车辆体检"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rightright"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center"
+            android:text="历史"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

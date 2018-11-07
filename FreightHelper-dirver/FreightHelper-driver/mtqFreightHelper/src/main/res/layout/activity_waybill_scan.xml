@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+    <SurfaceView
+        android:id="@+id/rich_scan_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/scan_viewfinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+      
+      <include layout = "@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+   	  />
+      <com.zhy.android.percent.support.PercentRelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	 <ImageView android:src="@drawable/ic_scan_barcode"
+	   	        app:layout_marginTopPercent = "16%sh"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="0dp"
+	   	        android:layout_centerHorizontal="true"
+	   	        android:scaleType="centerInside"
+	   	        app:layout_heightPercent = "2.7%sh"
+	   	  />
+    	 <TextView 
+    	     android:text="请将条码放入框内"
+    	     android:textColor="@color/white"
+    	     android:layout_alignParentTop="true"
+    	     android:layout_centerHorizontal="true"
+	   	     app:layout_marginTopPercent = "20.4%sh"
+	   	     android:layout_width="wrap_content" 
+	   	     android:layout_height="wrap_content"
+	   	     app:layout_textSizePercent ="2.13%sh"
+    	  />
+    	 <TextView 
+    	     android:text="即可自动扫描"
+    	     android:layout_centerHorizontal="true"
+    	     android:textColor="@color/white"
+    	     android:layout_alignParentTop="true"
+	   	     app:layout_marginTopPercent = "23%sh"
+	   	     android:layout_width="wrap_content"
+	   	     android:layout_height="wrap_content"
+	   	     app:layout_textSizePercent ="2.13%sh"
+    	  />
+    	<include layout = "@layout/layout_scan_foot"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14.06%sh"
+    	 />
+      </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentFrameLayout>

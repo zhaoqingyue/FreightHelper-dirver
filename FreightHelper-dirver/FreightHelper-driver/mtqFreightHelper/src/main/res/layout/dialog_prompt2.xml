@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_widthPercent="90%w"
+        android:background="@drawable/shape_prompt_dialog_bg"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w" />
+
+        <ListView
+            android:id="@+id/dialog_prompt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginBottomPercent="0%w"
+            app:layout_marginTopPercent="0%w"
+           
+            android:divider="#00c7c7c7"
+            android:dividerHeight="0px"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w" />
+
+        <Button
+            android:id="@+id/dialog_prompt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="15%w"
+            app:layout_marginBottomPercent="0%w"
+            app:layout_marginLeftPercent="0%w"
+            app:layout_marginRightPercent="0%w"
+            app:layout_textSizePercent="6.5%w"
+            android:background="@drawable/selector_btn_mutinum"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

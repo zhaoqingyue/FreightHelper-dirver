@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/windows_color"
+        android:scrollbars="none" >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/car_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/car_map_test" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#ccffffff"
+                    android:orientation="horizontal" >
+
+                    <!-- 历史行程 -->
+                    <TextView
+                        android:id="@+id/car_detail_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        app:layout_paddingLeftPercent="5%w"
+                        app:layout_textSizePercent="4.8%w"
+                        android:drawablePadding="4dp"
+                        android:drawableRight="@drawable/car_down"
+                        android:gravity="center_vertical"
+                        android:text="@string/car_condition_route"
+                        android:textColor="#109EA2" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/car_detail_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="4"
+                        app:layout_paddingRightPercent="5%w"
+                        app:layout_textSizePercent="4.8%w"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ccffffff"
+                    android:orientation="horizontal" >
+
+                    <!-- 车辆 -->
+                    <TextView
+                        android:id="@+id/car_detail_plate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="5"
+                        app:layout_paddingLeftPercent="5%w"
+                        app:layout_textSizePercent="4.8%w"
+                        android:gravity="center_vertical"
+                        android:text="@string/car_condition_car"
+                        android:textColor="@color/black" />
+
+                    <!-- 运单 -->
+                    <TextView
+                        android:id="@+id/car_detail_waybill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="6"
+                        app:layout_paddingRightPercent="5%w"
+                        app:layout_textSizePercent="4.8%w"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/car_condition_waybill"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white" >
+
+                <!-- 总油耗 -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="50%"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/car_condition_total_fuel_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        app:layout_heightPercent="40%h"
+                        app:layout_widthPercent="40%h"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/car_total_fuel" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/car_detail_total_fuel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="30%h"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="22%h"
+                            android:text="@string/car_condition_total_fuel"
+                            android:textColor="@color/black" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_gradient_line_top" />
+
+                <!-- 百公里油耗 -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    app:layout_widthPercent="50%"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/car_condition_hundred_fuel_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        app:layout_heightPercent="40%h"
+                        app:layout_widthPercent="40%h"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/car_hundred_fuel" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/car_detail_hundred_fuel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="30%h"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="22%h"
+                            android:text="@string/car_condition_hundred_fuel"
+                            android:textColor="@color/black" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_widthPercent="50%"
+                    android:background="@drawable/shape_gradient_line_left" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_widthPercent="50%"
+                    android:background="@drawable/shape_gradient_line_right" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white" >
+
+                <!-- 怠速油耗 -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="50%"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/car_condition_idle_speed_fuel_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        app:layout_heightPercent="40%h"
+                        app:layout_widthPercent="40%h"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/car_idle_speed_fuel" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/car_detail_idle_speed_fuel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="30%h"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="22%h"
+                            android:text="@string/car_condition_idle_speed_fuel"
+                            android:textColor="@color/black" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_gradient_line_bottom" />
+
+                <!-- 怠速时长 -->
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    app:layout_widthPercent="50%"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/car_condition_idle_speed_time_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        app:layout_heightPercent="40%h"
+                        app:layout_widthPercent="40%h"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/car_idle_speed_time" />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/car_detail_idle_speed_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="30%h"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="22%h"
+                            android:text="@string/car_condition_idle_speed_time"
+                            android:textColor="@color/black" />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 总时长 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_marginTopPercent="@string/common_marginTopPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="5%w"
+                    android:text="@string/car_condition_total_time"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/car_detail_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="4.5%w"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                    android:background="@color/windows_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 总里程 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="5%w"
+                    android:text="@string/car_condition_total_mileage"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/car_detail_total_mileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="4.5%w"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                    android:background="@color/windows_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 最高车速 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="5%w"
+                    android:text="@string/car_condition_max_speed"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/car_detail_max_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="4.5%w"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                    android:background="@color/windows_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 平均车速 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="5%w"
+                    android:text="@string/car_condition_average_speed"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/car_detail_average_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:layout_textSizePercent="4.5%w"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

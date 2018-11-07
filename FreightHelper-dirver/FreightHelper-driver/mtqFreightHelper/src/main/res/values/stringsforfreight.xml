@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 货运 -->
+    <string name="lookover_finish_tasklist">查看已完成任务列表</string>
+    <string name="task_stop">暂停任务</string>
+    <string name="task_finish">结束任务</string>
+    <string name="task_resume">继续任务</string>
+    <string name="task_start">开始任务</string>
+    <string name="transporting">运输中</string>
+    <string name="transport_status_stop">等待运输</string>
+    <string name="search_task">搜索运货单</string>
+    <string name="all">全部</string>
+    <string name="from">由&#160;</string>
+    <string name="send_to_several_point">&#160;送货到各个点</string>
+    <string name="departure_time">发车时间:&#160;</string>
+    <string name="issued">&#160;发车</string>
+    <string name="take_good_send_to">将货物送至&#160;</string>
+    <string name="info_total_km">总公里:&#160;</string>
+    <string name="info_goods">货物:&#160;</string>
+    <string name="piece_num">件数:&#160;</string>
+    <string name="box_num">箱数:&#160;</string>
+    <string name="volume">体积:&#160;</string>
+    <string name="weight">重量:&#160;</string>
+    <string name="switch_company">企业切换</string>
+    <string name="from2">从&#160;</string>
+    <string name="to">&#160;到&#160;</string>
+    <string name="km">公里</string>
+    <string name="ton">吨</string>
+    <string name="square">方</string>
+    <string name="piece">件</string>
+    <string name="box">箱</string>
+    <string name="yesterday">昨天&#160;</string>
+    <string name="today">今天&#160;</string>
+    <string name="tomorrow">明天&#160;</string>
+
+    <string name="task_transport">运输中</string>
+    <string name="task_wait">等待运输</string>
+    <string name="task_finished">已完成</string>
+    <string name="departure">提货点</string>
+    <string name="destination">路由城市</string>
+    <string name="distribution">集货点</string>
+    <string name="more">更多</string>
+
+    <string name="has_finish_task">已结束任务</string>
+    <string name="get_data_fail">获取数据失败</string>
+    <string name="current_choise">当前选择</string>
+    <string name="all_company">所有企业</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="resume">继续</string>
+    <string name="request_fail">请求失败</string>
+    <string name="request_success">请求成功</string>
+    <string name="task_finish_sp1">您将结束的任务为:</string>
+    <string name="task_start_stop_sp1">当前正在运货:</string>
+    <string name="task_finish_title">确定要结束当前任务?</string>
+    <string name="task_finish_hint">提示:结束后,任务将放入&#160;&#8243;已结束&#8243;&#160;列表中,且不可继续运货.</string>
+    <string name="task_stop_title">确定要暂停当前任务?</string>
+    <string name="task_stop_hint">提示:暂停后,当前任务将更新为等待运输,超时任务3天后将自动结束且不可继续运货.</string>
+    <string name="task_start_stop_title">执行新的运货将暂停当前的运货,是否继续?</string>
+    <string name="need_navigation">是否需要开启导航?</string>
+    <string name="need_navigation_hint">可按照企业推荐的路线进行导航</string>
+    <string name="navigation">导航</string>
+    <string name="no_use">不用了</string>
+    <string name="select_transpoint">选择路由点</string>
+    <string name="check_task">查看所有</string>
+    <string name="transpoint">路由点</string>
+    <string name="transgood">运货</string>
+    <string name="task_entire_journey_navigation">任务全程导航</string>
+    <string name="address">地&#160;&#160;&#160;&#160;址:</string>
+    <string name="storename">门&#160;&#160;&#160;&#160;店:</string>
+    <string name="contact">联系人:</string>
+    <string name="phone">电&#160;&#160;&#160;&#160;话:</string>
+    <string name="scanfgoods">扫描签货</string>
+    <string name="inputgoods">手动签货</string>
+    <string name="dot">&#046;</string>
+    <string name="recent_search">最近查看</string>
+    <string name="clean_history_search">清空历史记录</string>
+    <string name="no_record_any_more">-没有更多记录了-</string>
+    <string name="loading_more_record">正在加载更多</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    
+    <string name="taskpoint_stop_title">确认暂停当前运货?</string>
+    <string name="taskpoint_stop_hint">当前为此任务最后一个路由点,本次操作将暂停运货,可在等待运货的任务中找到;超时任务将在3天后自动结束且不可继续运货.</string>
+    <string name="close">关闭</string>
+    <string name="taskpoint_stop">暂停运货</string>
+    
+    <string name="taskpoint_arrvied">到达路由点</string>
+    <string name="close_navigate">关闭导航</string>
+    <string name="task_in_freight">正在运货中</string>
+    
+    
+    
+    
+
+</resources>

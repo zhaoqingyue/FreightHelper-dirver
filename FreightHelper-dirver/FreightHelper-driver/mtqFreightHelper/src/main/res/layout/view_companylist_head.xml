@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_paddingBottomPercent="2%sw"
+        app:layout_paddingTopPercent="2%sw"
+        app:layout_textSizePercent="@string/textsize_little_title"
+        android:text="@string/current_choise"
+        android:textColor="@color/tasklist_text_color"
+        app:layout_paddingLeftPercent="7%sw"
+        app:layout_paddingRightPercent="7%sw" />
+
+    <TextView
+        android:id="@+id/tv_currentname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_paddingBottomPercent="5%sw"
+        app:layout_paddingLeftPercent="7%sw"
+        app:layout_paddingRightPercent="7%sw"
+        app:layout_paddingTopPercent="5%sw"
+        app:layout_textSizePercent="5.4%sw"
+        android:background="@drawable/selector_normal_listitem"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/black_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_paddingBottomPercent="2%sw"
+      app:layout_paddingLeftPercent="7%sw"
+        app:layout_paddingRightPercent="7%sw" 
+        app:layout_paddingTopPercent="2%sw"
+        app:layout_textSizePercent="@string/textsize_little_title"
+        android:text="@string/all_company"
+        android:textColor="@color/tasklist_text_color" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:layout_paddingLeftPercent="4%sw"
+        app:layout_paddingRightPercent="4%sw"
+        app:layout_paddingTopPercent="2%sw">
+
+        <ImageView
+            android:id="@+id/freight_point_type_pic"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_task_deliver"
+            app:layout_marginTopPercent="1.7%sw"
+            app:layout_paddingRightPercent="2%sw"
+            app:layout_heightPercent="4.8%sw"
+            app:layout_widthPercent="6.8%sw" />
+
+        <TextView
+            android:id="@+id/id_freight_point_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/freight_point_type_pic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="沃尔玛香蜜湖店"
+            android:textColor="@color/black"
+            app:layout_maxWidthPercent="50%sw"
+            app:layout_textSizePercent="4.3%sw" />
+
+
+
+        <TextView
+            android:id="@+id/freight_point_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/freight_point_type_pic"
+            android:text="@string/address"
+            app:layout_paddingRightPercent="1%w"
+            android:textColor="@color/scanrecord_list_uploadresult"
+            app:layout_marginTopPercent="1.5%sw"
+            app:layout_textSizePercent="3.7%sw" />
+
+        <TextView
+            android:id="@+id/id_freight_point_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/freight_point_address_title"
+            android:layout_toRightOf="@id/freight_point_address_title"
+            android:singleLine="false"
+            android:text="深圳市福田汽车站"
+            android:textColor="@color/black3"
+            app:layout_maxWidthPercent="70%sw"
+            app:layout_textSizePercent="3.7%sw" />
+
+
+        <TextView
+            android:id="@+id/id_freight_point_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:layout_marginTopPercent="1.7%sw"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="已完成"
+            android:textColor="@color/greeny1"
+            app:layout_textSizePercent="3.7%sw"
+            app:layout_widthPercent="30%" />
+
+        <TextView
+            android:id="@+id/id_freight_point_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/freight_point_address_title"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="10点前到"
+            android:textColor="@color/black3"
+            android:visibility="gone"
+            app:layout_textSizePercent="3.7%sw"
+            app:layout_widthPercent="50%" />
+
+        <View
+            android:id="@+id/id_freight_point_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/id_freight_point_address"
+            app:layout_marginTopPercent="0%sw" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pll_taskpoint_detail_kcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_select"
+            android:layout_below="@id/id_freight_point_line"
+            app:layout_paddingLeftPercent="0%w"
+            app:layout_marginRightPercent="0%w"
+            android:orientation="horizontal"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingRightPercent="1%w"
+                app:layout_textSizePercent="3.7%sw"
+                android:gravity="center_vertical"
+                android:text="@string/contact"
+                android:textColor="@color/scanrecord_list_uploadresult" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="0%w"
+                android:gravity="center_vertical"
+                app:layout_textSizePercent="3.7%sw"
+                android:textColor="@color/black_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pll_taskpoint_detail_kcode"
+            android:layout_toLeftOf="@+id/iv_select"
+            app:layout_paddingLeftPercent="0%w"
+            app:layout_marginRightPercent="0%w"
+            app:layout_paddingBottomPercent="0%w"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingRightPercent="1%w"
+                app:layout_textSizePercent="3.7%sw"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textColor="@color/scanrecord_list_uploadresult" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="0%w"
+                android:gravity="center_vertical"
+                app:layout_textSizePercent="3.7%sw"
+                android:textColor="@color/black_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:id="@+id/v333"
+            android:layout_below="@+id/pll3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="4%sw"
+            android:background="@color/transparent"
+            app:layout_marginTopPercent="0%sw" />
+
+
+        <!--<View-->
+        <!--android:layout_below="@+id/v333"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:background="@color/tasklist_stroke"-->
+        <!--app:layout_marginTopPercent="0%sw" />-->
+
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/id_freight_point_line"
+            android:visibility="gone"
+            app:layout_heightPercent="13.4%sw">
+
+            <TextView
+                android:id="@+id/freight_time_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="已超时"
+                android:textColor="#ff7800"
+                app:layout_marginRightPercent="3%w"
+                app:layout_textSizePercent="3.7%sw" />
+
+
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/btn_getposition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/freight_time_status"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/btn_getposition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_background_orange"
+
+                    android:text="获取位置点"
+
+                    android:textColor="@color/white"
+                    app:layout_paddingBottomPercent="1%sw"
+                    app:layout_paddingLeftPercent="2%sw"
+                    app:layout_paddingRightPercent="2%sw"
+                    app:layout_paddingTopPercent="1%sw"
+                    app:layout_textSizePercent="3.7%sw" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

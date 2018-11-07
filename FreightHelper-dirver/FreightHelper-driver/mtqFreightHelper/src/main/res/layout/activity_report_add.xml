@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_color"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%sh"
+        android:background="@color/bar_color"
+        android:clipToPadding="true" >
+
+        <ImageView
+            android:id="@+id/iv_titleleft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_widthPercent="100%h"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_textSizePercent="35%h"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="上报"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rightright"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"
+            app:layout_textSizePercent="4%w"
+            android:gravity="center"
+            android:text="提交"
+            android:visibility="visible" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/windows_color" >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    app:layout_heightPercent="14%w"
+                    app:layout_marginTopPercent="3%w"
+                    app:layout_paddingBottomPercent="0%w"
+                    app:layout_paddingLeftPercent="5%w"
+                    app:layout_paddingRightPercent="5%w"
+                    app:layout_paddingTopPercent="0%w"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        app:layout_textSizePercent="4.5%w"
+                        android:gravity="center_vertical"
+                        android:text="类型"
+                        android:textColor="@color/text_normal_color" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        app:layout_paddingBottomPercent="0%w"
+                        app:layout_paddingLeftPercent="0%w"
+                        app:layout_paddingRightPercent="0%w"
+                        app:layout_textSizePercent="4.5%w"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/black_text" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        app:layout_heightPercent="3%w"
+                        app:layout_marginLeftPercent="1.5%w"
+                        app:layout_marginRightPercent="0%w"
+                        app:layout_widthPercent="4.5%w"
+                        android:gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/icon_down" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        app:layout_marginLeftPercent="5%w"
+                        app:layout_marginRightPercent="5%w"
+                        android:background="@color/tasklist_stroke" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout>
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_alignParentLeft="true"
+                    app:layout_heightPercent="14%w"
+                    app:layout_paddingBottomPercent="0%w"
+                    app:layout_paddingLeftPercent="5%w"
+                    app:layout_paddingRightPercent="5%w"
+                    app:layout_paddingTopPercent="0%w"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/tv_status"
+                        app:layout_textSizePercent="4.5%w"
+                        android:gravity="center_vertical"
+                        android:text="位置"
+                        android:textColor="@color/text_normal_color" />
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        app:layout_paddingLeftPercent="5%w"
+                        app:layout_paddingRightPercent="3%w"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_text" />
+
+                    <TextView
+                        android:id="@+id/tv_selectposition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@+id/tv_status"
+                        app:layout_paddingBottomPercent="0%w"
+                        app:layout_paddingLeftPercent="0%w"
+                        app:layout_paddingRightPercent="0%w"
+                        app:layout_textSizePercent="4.5%w"
+                        android:gravity="center_vertical"
+                        android:text="地图选点"
+                        android:textColor="@color/app_color" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/pll_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:layout_marginBottomPercent="2%w"
+                        app:layout_marginLeftPercent="5%w"
+                        app:layout_marginRightPercent="7%w"
+                        app:layout_marginTopPercent="2%w"
+                        app:layout_textSizePercent="@string/textsize_little_title"
+                        android:text="备注信息"
+                        android:textColor="@color/tasklist_text_color" />
+
+                    <com.zhy.android.percent.support.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_minHeightPercent="45%w"
+                        app:layout_paddingPercent="5%w"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/et_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/tv_status"
+                            app:layout_marginBottomPercent="5%w"
+                            app:layout_minHeightPercent="30%w"
+                            app:layout_textSizePercent="5%w"
+                            android:background="@null"
+                            android:gravity="top|left"
+                            android:hint="请描述上报的事件内容"
+                            android:maxLength="300"
+                            android:text=""
+                            android:textColor="@color/text_normal_color"
+                            android:textColorHint="@color/text_hint" />
+
+                        <TextView
+                            android:id="@+id/tv_wordcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            app:layout_textSizePercent="4%w"
+                            android:text="0/300"
+                            android:textColor="@color/text_normal_color" />
+                    </com.zhy.android.percent.support.PercentRelativeLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:layout_marginBottomPercent="2%w"
+                    app:layout_marginLeftPercent="5%w"
+                    app:layout_marginRightPercent="7%w"
+                    app:layout_marginTopPercent="2%w"
+                    app:layout_textSizePercent="@string/textsize_little_title"
+                    android:text="添加照片"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_paddingPercent="5%w"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.yunbaba.freighthelper.ui.customview.NoScrollGridView
+                        android:id="@+id/gv_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+
+                    <TextView
+                        android:id="@+id/tv_picnumhint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:layout_marginLeftPercent="25%w"
+                        app:layout_textSizePercent="4%w"
+                        android:text="拍张参考照片,我们会优先处理哦~"
+                        android:textColor="@color/text_hint"
+                        android:visibility="visible" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </ScrollView>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/pb_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/app_color2"
+                android:clickable="true"
+                android:indeterminate="false" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </RelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

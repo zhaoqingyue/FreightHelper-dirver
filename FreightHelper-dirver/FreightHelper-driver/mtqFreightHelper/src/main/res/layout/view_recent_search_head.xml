@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_recentcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:layout_marginBottomPercent="3%sw"
+        app:layout_paddingLeftPercent="5%sw"
+       app:layout_paddingRightPercent="5%sw"
+        app:layout_marginTopPercent="3%sw"
+        app:layout_textSizePercent="@string/textsize_little_title"
+        android:text="@string/recent_search"
+        android:textColor="@color/tasklist_text_color"
+        />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

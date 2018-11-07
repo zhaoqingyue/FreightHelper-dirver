@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white">
+	    
+	<com.zhy.android.percent.support.PercentLinearLayout
+	    android:id="@+id/freight_point_tab"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:orientation="vertical" >
+
+		<com.zhy.android.percent.support.PercentRelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:layout_heightPercent="9%sh"
+			android:background="@color/white"
+			android:clipToPadding="true" >
+
+			<ImageView
+				android:id="@+id/title_left_img"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_centerVertical="true"
+				app:layout_heightPercent="100%h"
+				app:layout_paddingTopPercent="30%h"
+				app:layout_paddingBottomPercent="30%h"
+				app:layout_paddingLeftPercent="35%h"
+				app:layout_paddingRightPercent="40%h"
+				app:layout_widthPercent="100%h"
+				android:contentDescription="@string/app_name"
+				android:scaleType="fitXY"
+				android:src="@drawable/icon_back_gray"
+				android:visibility="gone" />
+
+			<TextView
+				android:id="@+id/title_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="@string/app_name"
+				app:layout_textSizePercent="5.5%w"
+				android:textColor="@color/black_text"
+				android:textStyle="bold" />
+
+			<ImageView
+				android:id="@+id/title_right_img"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				app:layout_heightPercent="100%h"
+				app:layout_paddingBottomPercent="32%h"
+				app:layout_paddingLeftPercent="37%h"
+				app:layout_paddingRightPercent="37%h"
+				app:layout_paddingTopPercent="32%h"
+				app:layout_widthPercent="110%h"
+				android:contentDescription="@string/app_name"
+				android:scaleType="fitXY"
+				android:visibility="gone" />
+
+			<TextView
+				android:id="@+id/title_right_text"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				app:layout_heightPercent="100%h"
+				app:layout_paddingPercent="30%h"
+				app:layout_textSizePercent="5%w"
+				android:visibility="gone" />
+
+			<View
+				android:background="@color/tasklist_stroke"
+				android:layout_height="1px"
+				android:layout_width="match_parent"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+
+				/>
+
+		</com.zhy.android.percent.support.PercentRelativeLayout>
+	    <com.zhy.android.percent.support.PercentLinearLayout 
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+			android:layout_height="0dp"
+	        app:layout_heightPercent="6.35%sh"
+	        android:background="#fcfcfc">
+	        
+	        <com.zhy.android.percent.support.PercentRelativeLayout
+	            android:id="@+id/id_map_mode"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="1">
+	            <TextView 
+	                android:id="@+id/id_map_mode_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="地图模式"
+	                android:textColor="@drawable/freight_point_mode_color"
+	                android:layout_centerInParent="true"
+	                app:layout_textSizePercent ="2.5%sh"
+	             />
+	            <ImageView android:id="@+id/id_map_mode_line"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerInParent="true"
+	                android:layout_width="0dp"
+	                android:layout_height="0dp"
+	                app:layout_widthPercent = "20%sw"
+	                app:layout_heightPercent = "1%sw"
+	                android:src="@drawable/freight_point_line_color"/>
+	            
+	        </com.zhy.android.percent.support.PercentRelativeLayout>
+	        
+	        <com.zhy.android.percent.support.PercentRelativeLayout
+	            android:id="@+id/id_list_mode"
+	            android:layout_height="match_parent"
+	            android:layout_width="0dp"
+	            android:layout_weight="1">
+	            <TextView 
+	                android:id="@+id/id_list_mode_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                app:layout_textSizePercent ="2.5%sh"
+	                android:text="列表模式"
+	                android:textColor="@drawable/freight_point_mode_color"
+	                android:layout_centerInParent="true"
+	             />
+	            
+	            <ImageView android:id="@+id/id_list_mode_line"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerInParent="true"
+	                android:layout_width="0dp"
+	                android:layout_height="0dp"
+	                app:layout_widthPercent = "20%sw"
+	                app:layout_heightPercent = "1%sw"
+	                android:src="@drawable/freight_point_line_color"/>
+	            
+	        </com.zhy.android.percent.support.PercentRelativeLayout>
+	        
+	    </com.zhy.android.percent.support.PercentLinearLayout>
+	    
+	 
+	
+	 </com.zhy.android.percent.support.PercentLinearLayout>
+	 
+	 <FrameLayout 
+	     	android:layout_below="@+id/freight_point_tab"
+	        android:id="@+id/id_freightpoit_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/scanrecord_list_title_bg">
+	 </FrameLayout>
+	    
+	  <FrameLayout 
+	      	android:layout_below="@+id/freight_point_tab"
+	        android:id="@+id/otherFrameLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="invisible"
+	        android:background="@color/scanrecord_list_title_bg">
+	  </FrameLayout>
+	  
+	  
+	  <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/freight_point_pb_waiting"
+            android:layout_below="@+id/freight_point_title"            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone" >
+
+      <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+		  android:indeterminateTint="@color/app_color2"
+                android:indeterminate="false" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+	  
+	 
+</com.zhy.android.percent.support.PercentRelativeLayout>

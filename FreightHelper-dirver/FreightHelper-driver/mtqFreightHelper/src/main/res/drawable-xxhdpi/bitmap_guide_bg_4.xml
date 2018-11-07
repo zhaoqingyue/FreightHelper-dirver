@@ -1,0 +1,5 @@
+<bitmap
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/img_guide_bg_4"
+    android:tileMode="disabled"
+    android:dither="true" />

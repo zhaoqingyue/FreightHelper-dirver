@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_msg_schedule_speech_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_textSizePercent="4%w"
+            android:background="@drawable/shape_msg_time_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="2017-03-23 09:53"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_marginLeftPercent="@string/msg_marginLeftPercent"
+        app:layout_marginRightPercent="@string/msg_marginRightPercent"
+        android:background="@drawable/shape_msg_content_bg" >
+
+        <ImageView
+            android:id="@+id/business_msg_schedule_general_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="7%w"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_widthPercent="12%w"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/msg_business_schedule" />
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/business_msg_schedule_general_item_icon"
+            android:layout_alignTop="@+id/business_msg_schedule_general_item_icon"
+            android:layout_toRightOf="@+id/business_msg_schedule_general_item_icon"
+            app:layout_textSizePercent="5.5%w"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/msg_business_schedule_general"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/business_msg_schedule_general_item_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/business_msg_schedule_general_item_icon"
+            android:background="@color/black2" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rll_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_schedule_general_item_line1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent" >
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/ll_speech"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="13%w"
+                android:background="@drawable/round_background_windowcolor"
+                app:layout_widthPercent="70%w" >
+
+                <ImageView
+                    android:id="@+id/iv_hint_speech_playing"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="100%h"
+                    app:layout_paddingBottomPercent="30%h"
+                    app:layout_paddingLeftPercent="30%h"
+                    app:layout_paddingRightPercent="30%h"
+                    app:layout_paddingTopPercent="30%h"
+                    app:layout_widthPercent="90%h"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/anim_play_frame_3" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:id="@+id/v_noread"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/ll_speech"
+                app:layout_marginLeftPercent="2%w"
+                app:layout_heightPercent="2%w"
+                app:layout_widthPercent="2%w"
+                android:background="@drawable/circle_redpoint" />
+
+            <TextView
+                android:id="@+id/tv_speechtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ll_speech"
+                android:layout_toRightOf="@+id/ll_speech"
+                 app:layout_marginLeftPercent="2%w"
+                app:layout_textSizePercent="4%w"
+                
+                android:text=""
+                android:textColor="@color/tasklist_text_color" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_corpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rll_speech"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w"
+            android:paddingBottom="20dp"
+            android:text="马蹄圈物流公司"
+            android:textColor="@color/black1" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

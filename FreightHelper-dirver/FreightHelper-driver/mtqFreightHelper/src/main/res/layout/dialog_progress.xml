@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="10%"
+        app:layout_paddingLeftPercent="5%"
+        app:layout_paddingRightPercent="5%"
+        app:layout_widthPercent="86%"
+        android:background="@drawable/shape_prompt_dialog_bg" >
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="40%h"
+            app:layout_widthPercent="40%h"
+            android:indeterminateTint="@color/app_color2"
+            android:progress="0"
+            android:indeterminateDrawable="@drawable/rotate_progress_animation"
+            android:indeterminateDuration="1000" />
+
+        <TextView
+            android:id="@+id/progress_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            app:layout_textSizePercent="6%w"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="正在检查更新中，请稍后..."
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/progress_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="35%h"
+            app:layout_widthPercent="35%h"
+            android:src="@drawable/selector_cancel"
+            android:contentDescription="@string/app_name" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

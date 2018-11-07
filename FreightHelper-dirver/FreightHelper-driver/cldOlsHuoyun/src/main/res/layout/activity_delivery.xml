@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="鑒權" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="周边门店" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索门店" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="未标注门店" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="车队" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取运货单列表" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取运货单历史" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取运货单详情" />
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="拒绝加入车队" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="同意加入" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="标注门店" />
+
+        <Button
+            android:id="@+id/button_13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="上报电子围栏" />
+
+        <Button
+            android:id="@+id/button_14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请求电子围栏" />
+
+        <Button
+            android:id="@+id/button_15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取授权用户列表" />
+
+        <Button
+            android:id="@+id/button_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取授权门店列表" />
+
+        <Button
+            android:id="@+id/button_17"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="修改运货单状态" />
+
+        <Button
+            android:id="@+id/button_18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请求授权企业列表" />
+
+        <Button
+            android:id="@+id/button_19"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="修改运货点" />
+        
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取权限信息" />
+        
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取所有围栏" />
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="上传条形码" />
+        <Button
+            android:id="@+id/button_23"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取车辆体检历史列表" />
+        <Button
+            android:id="@+id/button_24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="获取车辆体检详情" />
+    </LinearLayout>
+
+</ScrollView>

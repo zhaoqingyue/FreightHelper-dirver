@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    android:orientation="horizontal" >
+    <com.zhy.android.percent.support.PercentRelativeLayout 
+        android:id="@+id/scan_bottom_atuo_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <ImageView android:id="@+id/scan_bottom_atuo"
+           android:layout_height = "0dp"
+           android:layout_width="0dp"
+           app:layout_widthPercent = "5.56%sw"
+           app:layout_heightPercent = "5.56%sw"
+           app:layout_marginTopPercent = "6%sw"
+           android:scaleType="centerInside"
+           android:src="@drawable/selector_scanf_auto"
+           android:layout_centerHorizontal="true"
+         />
+        <TextView android:layout_below="@id/scan_bottom_atuo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/scanfgoods"
+            android:textColor="@drawable/selector_scan_text"
+            app:layout_textSizePercent = "4.6%sw"
+            app:layout_marginTopPercent = "2.7%sw"
+            android:layout_centerHorizontal="true"
+         />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    
+    <com.zhy.android.percent.support.PercentRelativeLayout 
+        android:id="@+id/scan_bottom_input_viewgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        >
+        <ImageView android:id="@+id/scan_bottom_input"
+           android:layout_height = "0dp"
+           android:layout_width="0dp"
+           app:layout_widthPercent = "5.56%sw"
+           app:layout_heightPercent = "5.56%sw"
+           app:layout_marginTopPercent = "6%sw"
+           android:scaleType="centerInside"
+           android:src="@drawable/selector_input_goods"
+           android:layout_centerHorizontal="true"
+         />
+        <TextView android:layout_below="@id/scan_bottom_input"
+          android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/inputgoods"
+            android:textColor="@drawable/selector_scan_text"
+            app:layout_textSizePercent = "4.6%sw"
+            app:layout_marginTopPercent = "2.7%sw"
+            android:layout_centerHorizontal="true"
+         />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

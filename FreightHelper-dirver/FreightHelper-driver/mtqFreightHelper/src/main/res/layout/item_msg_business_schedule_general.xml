@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_msg_schedule_general_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_textSizePercent="4%w"
+            android:background="@drawable/shape_msg_time_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="2017-03-23 09:53"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_marginLeftPercent="@string/msg_marginLeftPercent"
+        app:layout_marginRightPercent="@string/msg_marginRightPercent"
+        android:background="@drawable/shape_msg_content_bg" >
+
+        <ImageView
+            android:id="@+id/business_msg_schedule_general_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="7%w"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_widthPercent="12%w"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/msg_business_schedule" />
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/business_msg_schedule_general_item_icon"
+            android:layout_alignTop="@+id/business_msg_schedule_general_item_icon"
+            android:layout_toRightOf="@+id/business_msg_schedule_general_item_icon"
+            app:layout_textSizePercent="5.5%w"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/msg_business_schedule_general"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/business_msg_schedule_general_item_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/business_msg_schedule_general_item_icon"
+            android:background="@color/black2" />
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_schedule_general_item_line1"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp"
+            android:text="请下午到福田区凯立德公司来"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/business_msg_schedule_general_item_corpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_schedule_general_item_content"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w"
+            android:paddingBottom="20dp"
+            android:text="马蹄圈物流公司"
+            android:textColor="@color/black1" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

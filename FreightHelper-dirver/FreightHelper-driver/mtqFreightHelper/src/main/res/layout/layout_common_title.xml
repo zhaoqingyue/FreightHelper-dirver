@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="60dp"
+    android:clipToPadding="true" >
+
+    <ImageView
+        android:id="@+id/iv_titleleft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="100%h"
+        app:layout_paddingTopPercent="30%h"
+        app:layout_paddingBottomPercent="30%h"
+        app:layout_paddingLeftPercent="35%h"
+        app:layout_paddingRightPercent="40%h"
+        app:layout_widthPercent="100%h"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_back_gray"
+        android:visibility="visible" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_textSizePercent="35%h"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black_title"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_titleright"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_heightPercent="100%h"
+        app:layout_paddingBottomPercent="25%h"
+        app:layout_paddingLeftPercent="25%h"
+        app:layout_paddingRightPercent="25%h"
+        app:layout_paddingTopPercent="25%h"
+        app:layout_widthPercent="110%h"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/msg_icon"
+        android:visibility="gone" />
+    <View
+        android:background="@color/tasklist_stroke"
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,138 @@
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout = "@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+    />
+    
+    <com.zhy.android.percent.support.PercentLinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+   		android:layout_weight="1"
+   		android:background="@color/windows_color"
+   		android:orientation="vertical" >
+   		
+	   	<TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="上传进度"
+	        android:textColor="@color/black3"
+	        android:layout_gravity="center_horizontal"
+	        app:layout_marginTopPercent="5.5%sh" 
+	        app:layout_textSizePercent = "2.1%sh"
+	      />
+	   	<com.zhy.android.percent.support.PercentRelativeLayout 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="0dp"
+	   	    app:layout_heightPercent="9.3%sh"
+	   	    android:id="@+id/waybill_view"
+	   	 >
+	   	    <View android:id="@+id/waybill_line"
+	   	        android:layout_width="0dp"
+	   	        android:layout_height="20dp"
+	   	        android:background="@color/red"
+	   	        android:layout_centerHorizontal="true"/>
+	   	    <TextView android:id="@+id/waybill_scan_num"
+	   	        android:layout_toLeftOf="@id/waybill_line"
+	 			android:layout_alignParentBottom="true"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:textColor="@color/app_color2"
+	   	        android:text="22"
+	   	       app:layout_textSizePercent = "5.5%sh"
+	   	     />
+	   	    <TextView android:id="@+id/waybill_totalnum"
+	   	        android:layout_toRightOf="@id/waybill_line"
+	   			android:layout_alignParentBottom="true"
+	   			android:layout_marginBottom="3dp"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:text="/39"
+	   	        android:textColor="@color/black3"
+	   	        app:layout_textSizePercent = "3.5%sh"
+	   	      />
+	   	</com.zhy.android.percent.support.PercentRelativeLayout>
+	   	
+	   	<TextView android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_gravity="center_horizontal"
+	   	    android:text="扫描数量/货物总数量"
+	   	   	android:textColor="@color/scan_text_gray"
+	   	   	app:layout_textSizePercent = "2.2%sh"
+	   	   	app:layout_marginTopPercent="2.1%sh" 
+	   	 />
+	   	
+	   	<ProgressBar
+	   	    android:id="@+id/waybill_progess"
+	   	    style="@android:style/Widget.ProgressBar.Horizontal"
+	   	    android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    android:layout_gravity="center_horizontal"
+	   	    app:layout_marginTopPercent="3.1%sh" 
+	   	    app:layout_heightPercent = "2%sh"
+	   	    app:layout_widthPercent = "70%sw"
+			android:indeterminateTint="@color/app_color2"
+	   	    android:max="32"
+	   	    android:progress="2"
+	   	    android:progressDrawable="@drawable/waybill_progressbar" />
+	   	
+	   	<Button android:id="@+id/waybill_autoscan"
+	   	    android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    android:layout_gravity="center_horizontal"
+	   	    style="?android:attr/borderlessButtonStyle"
+	   	    app:layout_heightPercent = "7.6%sh"
+	   	    app:layout_widthPercent = "80%sw"
+	   	    app:layout_marginTopPercent="6.9%sh" 
+	   	    android:text="扫描签收"
+	   	    android:textColor="@color/white"
+	   	    app:layout_textSizePercent ="2.7%sh"
+	   	    android:background="@drawable/waybill_autoscan_btn_bg"
+	   	    />
+	   	
+	   	<Button android:id="@+id/waybill_inputscan"
+	   	    android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    style="?android:attr/borderlessButtonStyle"
+	   	    android:layout_gravity="center_horizontal"
+	   	    app:layout_heightPercent = "7.6%sh"
+	   	    app:layout_widthPercent = "80%sw"
+	   	    app:layout_marginTopPercent="2.65%sh" 
+	   	    android:text="手动签收"
+	   	    android:textColor="@color/white"
+	   	    app:layout_textSizePercent ="2.7%sh"
+	   	    android:background="@drawable/waybill_inputscan_btn_bg"
+	   	    />
+        
+	   	<com.zhy.android.percent.support.PercentRelativeLayout
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_gravity="center_horizontal"
+	   	    android:layout_height="0dp"
+	   	    app:layout_heightPercent = "12.7%sh">
+	   	    <ImageView android:src="@drawable/ic_scan_time"
+	   	        android:id="@+id/waybill_img1"
+	   	        android:layout_alignParentBottom="true"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="0dp"
+	   	        android:scaleType="centerInside"
+	   	        app:layout_heightPercent = "2.7%sh"
+	   	     />
+	   	    <TextView android:layout_toRightOf="@id/waybill_img1"
+	   	        android:id="@+id/waybill_checkrecord"
+	   	        android:layout_alignParentBottom="true"
+	   	        android:text="查看扫描记录"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:textColor="@color/black3"
+	   	        app:layout_textSizePercent = "2.4%sh"
+	   	     />
+	   	</com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    
+    
+ </com.zhy.android.percent.support.PercentLinearLayout>

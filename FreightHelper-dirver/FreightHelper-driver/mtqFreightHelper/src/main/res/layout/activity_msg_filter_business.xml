@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%sh"
+        android:background="@color/bakcground_white"
+        android:clipToPadding="true" >
+
+        <ImageView
+            android:id="@+id/title_left_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingTopPercent="35%h"
+            app:layout_paddingBottomPercent="35%h"
+            app:layout_paddingLeftPercent="30%h"
+            app:layout_paddingRightPercent="40%h"
+            app:layout_widthPercent="100%h"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            app:layout_textSizePercent="5.5%w"
+            android:textColor="#444444"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/title_right_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingBottomPercent="25%h"
+            app:layout_paddingLeftPercent="25%h"
+            app:layout_paddingRightPercent="25%h"
+            app:layout_paddingTopPercent="25%h"
+            app:layout_widthPercent="110%h"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_textSizePercent="5%w"
+            android:visibility="gone" />
+
+        <View
+            android:background="@color/tasklist_stroke"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+
+            />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/windows_color" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/msg_filter_title_heightPercent"
+            app:layout_paddingLeftPercent="@string/msg_filter_paddingLeftPercent"
+            app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+            android:gravity="center_vertical"
+            android:text="@string/filter_business"
+            android:textColor="@color/black" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/msg_filter_heightPercent"
+            app:layout_paddingLeftPercent="@string/msg_filter_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_filter_paddingRightPercent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/msg_filter_business_item0"
+                style="@style/msg_filter_style"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/filter_business_join" />
+
+            <TextView
+                android:id="@+id/msg_filter_business_item1"
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/filter_business_schedule" />
+
+            <TextView
+                android:id="@+id/msg_filter_business_item2"
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/filter_business_task"
+                android:visibility="visible" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/msg_filter_title_heightPercent"
+            app:layout_marginTopPercent="@string/msg_filter_marginTopPercent"
+            app:layout_paddingLeftPercent="@string/msg_filter_paddingLeftPercent"
+            app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+            android:gravity="center_vertical"
+            android:text="@string/filter_task"
+            android:visibility="gone"
+            android:textColor="@color/black" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/msg_filter_heightPercent"
+            app:layout_paddingLeftPercent="@string/msg_filter_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_filter_paddingRightPercent"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/msg_filter_business_item3"
+                style="@style/msg_filter_style"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/switch_waybill_timeout_alarm" />
+
+            <TextView
+                android:id="@+id/msg_filter_business_item4"
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/switch_waybill_timeout_remind" />
+
+            <TextView
+                android:id="@+id/msg_filter_business_item5"
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/switch_waybill_expired_alarm" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/msg_filter_heightPercent"
+            app:layout_marginTopPercent="@string/msg_filter_marginTopPercent"
+            app:layout_paddingLeftPercent="@string/msg_filter_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_filter_paddingRightPercent"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/msg_filter_business_item6"
+                style="@style/msg_filter_style"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:text="@string/switch_waybill_expired_remind" />
+
+            <TextView
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/msg_filter_style"
+                app:layout_marginLeftPercent="@string/msg_filter_marginLeftPercent"
+                app:layout_textSizePercent="@string/msg_filter_textSizePercent"
+                android:visibility="invisible" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%h"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_marginRightPercent="3%w"
+            app:layout_marginTopPercent="3.5%h"
+            app:layout_marginBottomPercent="2.5%h"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/msg_filter_business_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_textSizePercent="6%w"
+                android:background="@drawable/selector_bth_gray_bg"
+                android:gravity="center"
+                android:text="@string/filter_claer"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/msg_filter_business_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_textSizePercent="6%w"
+                android:background="@drawable/selector_bth_red_bg"
+                android:gravity="center"
+                android:text="@string/filter_finish"
+                android:textColor="@drawable/selector_bth_red_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

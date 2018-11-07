@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+
+        <attr name="layout_textSizePercent" format="string"/>
+
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+
+        <attr name="layout_paddingPercent" format="string"/>
+        <attr name="layout_paddingTopPercent" format="string"/>
+        <attr name="layout_paddingBottomPercent" format="string"/>
+        <attr name="layout_paddingLeftPercent" format="string"/>
+        <attr name="layout_paddingRightPercent" format="string"/>
+    </declare-styleable>
+    
+     <!-- 自定义圆形图片 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <!-- 自定义扇形圆弧 -->
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="background_color" format="color"/>      <!-- 背景圆弧颜色值 -->
+        <attr name="background_width" format="dimension"/>  <!-- 背景圆弧的宽度 -->
+        <attr name="progress_color_start" format="color"/>  <!-- 进度圆弧颜色值_start -->
+        <attr name="progress_color_middle" format="color"/> <!-- 进度圆弧颜色值_middle -->
+        <attr name="progress_color_end" format="color"/>    <!-- 进度圆弧颜色值_end -->
+        <attr name="progress_width" format="dimension"/>    <!-- 进度圆弧的宽度 -->
+        <attr name="diameter" format="integer"/>            <!-- 圆弧直径 -->
+        <attr name="total_angle" format="integer"/>         <!-- 最大角度 -->
+        <attr name="title_string" format="string"/>         <!-- 标题 -->
+        <attr name="title_color" format="color"/>           <!-- 标题颜色值 -->
+        <attr name="title_text_size" format="dimension" />  <!-- 标题字体大小 -->
+        <attr name="value_string" format="string"/>         <!-- 显示值 -->
+        <attr name="value_color" format="color"/>           <!-- 显示值颜色值 -->
+        <attr name="value_text_size" format="dimension" />  <!-- 显示值字体大小 -->
+        <attr name="max_value" format="float"/>             <!-- 进度最大值 -->
+        <attr name="cur_value" format="float"/>             <!-- 进度当前值 -->
+    </declare-styleable>
+    
+    <declare-styleable name="ViewfinderView">
+        <attr name="bottom_tips" format="string" />
+        <attr name="bottom_tips_padding" format="dimension" />
+        <attr name="net_error_tips" format="string" />
+    </declare-styleable>
+   
+    
+</resources>

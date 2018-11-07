@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <!-- 手机号验证 -->
+
+            <include
+                android:id="@+id/set_pwd_verify_mobile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/layout_set_pwd_verify_mobile"
+                android:visibility="visible" />
+
+            <!-- 设置新密码 -->
+
+            <include
+                android:id="@+id/set_pwd_set_new_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/layout_set_pwd_set_new_pwd"
+                android:visibility="gone" />
+        </com.zhy.android.percent.support.PercentFrameLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

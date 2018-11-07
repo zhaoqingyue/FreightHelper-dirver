@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <com.zhy.android.percent.support.PercentRelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id = "@+id/rl_car_condtion_no_data"
+     android:layout_below="@+id/rl_car_head_bg"
+     android:background="@color/windows_color"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     
+     <ImageView android:id="@+id/iv_no_car"
+         android:layout_centerHorizontal="true"
+         android:layout_alignParentTop="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:adjustViewBounds="true"
+         app:layout_marginTopPercent = "38%sw"
+     	 android:scaleType="centerInside"    
+     	 android:src="@drawable/ic_no_car_data"
+     	 app:layout_widthPercent = "29%sw"
+     	 app:layout_heightPercent = "29.72%sw"
+     />
+     
+     <TextView android:id="@+id/tv_no_car"
+         android:layout_below="@+id/iv_no_car"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+      	 android:layout_centerHorizontal="true"
+      	 android:text="您目前没有正在行驶的车辆"
+      	 android:textColor="@color/black3"
+      	 app:layout_textSizePercent = "4.2%sw"
+      	 app:layout_marginTopPercent = "6.3%sw"
+      />
+      <TextView android:id = "@+id/tv_no_car1"
+         android:layout_below="@+id/tv_no_car"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+      	 android:layout_centerHorizontal="true"
+      	 android:text="您可以"
+      	 android:textColor="@color/scan_text_gray"
+      	 app:layout_textSizePercent = "4.2%sw"
+      	 android:layout_marginTop="3dp"
+      />
+      
+      <TextView android:id = "@+id/btn_no_car_check_route"
+          	android:layout_below="@+id/tv_no_car1"
+            android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    android:layout_centerHorizontal="true"
+	   	    android:layout_gravity="center"
+		  android:gravity="center"
+	   	    app:layout_heightPercent = "11.75%sw"
+	   	    app:layout_widthPercent = "36.7%sw"
+	   	    app:layout_marginTopPercent="5.8%sw" 
+	   	    android:text="查看历史行程"
+	   	    android:textColor="@color/app_color2"
+	   	    app:layout_textSizePercent ="4.5%sw"
+		  android:background="@drawable/selector_circle_appcolor_btn"/>
+      
+      <TextView android:id = "@+id/btn_no_car_check_examination"
+          	android:layout_below="@+id/btn_no_car_check_route"
+            android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    android:layout_centerHorizontal="true"
+		  android:layout_gravity="center"
+		  android:gravity="center"
+	   	    app:layout_heightPercent = "11.75%sw"
+	   	    app:layout_widthPercent = "36.7%sw"
+	   	    app:layout_marginTopPercent="2.68%sw" 
+	   	    android:text="查看历史体检"
+	   	    android:textColor="@color/app_color2"
+	   	    app:layout_textSizePercent ="4.5%sw"
+		  android:background="@drawable/selector_circle_appcolor_btn"/>
+        
+</com.zhy.android.percent.support.PercentRelativeLayout>

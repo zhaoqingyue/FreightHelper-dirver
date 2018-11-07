@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="center" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:layout_heightPercent="45%w"
+        app:layout_widthPercent="45%w"
+        android:background="@drawable/round_background_white_full_normal"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pb_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:indeterminate="false"
+            android:indeterminateTint="@color/app_color2"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_paddingBottomPercent="10%w"
+            app:layout_paddingLeftPercent="10%w"
+            app:layout_paddingRightPercent="10%w"
+            app:layout_paddingTopPercent="10%w"
+            app:layout_textSizePercent="4%sw"
+            android:text="正在更新任务列表，请稍候..."
+            android:textColor="@color/text_normal_color" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

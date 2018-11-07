@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_store_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_ms_hint_report_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_normal_color2"
+        android:text="上报时间："
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_report_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-06-04 09:59"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_report_time"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_hint_store_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="门店信息："
+        android:textColor="@color/text_normal_color2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ms_hint_report_time"
+        app:layout_constraintRight_toRightOf="@id/tv_ms_hint_report_time"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_store_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Z963233-深圳福田车公庙店"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_store_info"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_hint_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="地　　址："
+        android:textColor="@color/text_normal_color2"
+        app:layout_constraintLeft_toLeftOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintRight_toRightOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ms_store_info"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="深圳市福田区深南大道6023号"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_address"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_hint_k_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="K　　 码："
+        android:textColor="@color/text_normal_color2"
+        android:gravity="end"
+        app:layout_constraintLeft_toLeftOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintTop_toBottomOf="@id/tv_ms_address"
+        app:layout_constraintRight_toRightOf="@id/tv_ms_hint_report_time"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_k_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="j25 236 542"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_k_code"
+        app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_report_time"
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_hint_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="联  系  人："
+        android:textColor="@color/text_normal_color2"
+        android:gravity="end"
+        app:layout_constraintTop_toBottomOf="@id/tv_ms_hint_k_code"
+        app:layout_constraintLeft_toLeftOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintRight_toRightOf="@id/tv_ms_hint_report_time"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="任先生"
+
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_report_time"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_contact"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_ms_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13888888888,11111111111,12365698652"
+        android:maxWidth="122dp"
+        android:textSize="18sp"
+        android:textColor="@color/upload_again_btn_color"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_hint_contact"
+        android:layout_marginRight="12dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_ms_hint_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_task_phone_p"
+        app:layout_constraintTop_toTopOf="@id/tv_ms_phone_num"
+        app:layout_constraintRight_toLeftOf="@id/tv_ms_phone_num"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_store_status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_ms_phone_num"
+        android:layout_marginTop="18dp"
+        >
+
+        <!--SEPARETOR LINE-->
+        <View
+            android:id="@+id/v_ms_separator_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/windows_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_ms_hint_approve_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核状态："
+            android:textColor="@color/text_normal_color2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_ms_separator_line"
+            />
+
+        <Button
+            android:id="@+id/btn_ms_upload_again"
+            android:layout_width="72dp"
+            android:layout_height="24dp"
+            android:text="再次上传"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_ms_separator_line"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_bth_red_text"
+            android:background="@drawable/selector_bth_red_bg"
+            />
+
+        <TextView
+            android:id="@+id/tv_ms_approve_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核通过"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/tv_ms_hint_approve_status"
+            app:layout_constraintTop_toTopOf="@id/tv_ms_hint_approve_status"
+            />
+
+        <TextView
+            android:id="@+id/tv_ms_hint_locked_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="锁定状态："
+            android:textColor="@color/text_normal_color2"
+            app:layout_constraintRight_toRightOf="@id/tv_ms_hint_approve_status"
+            app:layout_constraintTop_toBottomOf="@id/tv_ms_hint_approve_status"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ms_locked_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未锁定"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/tv_ms_approve_status"
+            app:layout_constraintTop_toTopOf="@id/tv_ms_hint_locked_status"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/v_item_separator_line"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/windows_color"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/cl_store_status_panel"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+

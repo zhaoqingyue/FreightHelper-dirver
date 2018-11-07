@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="40%"
+        app:layout_widthPercent="90%"
+        android:background="@drawable/shape_prompt_dialog_bg" >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="74%"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_confiem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="7%w"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:text="请联系企业管理员退出车队"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/windows_color" />
+
+            <ListView
+                android:id="@+id/dialog_confiem_listview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:layout_weight="1" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/dialog_confiem_ok"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="20%"
+            app:layout_marginBottomPercent="6%"
+            app:layout_textSizePercent="7%w"
+            app:layout_widthPercent="80%"
+            android:background="@drawable/selector_btn_emerald_green_bg"
+            android:gravity="center"
+            android:text="@string/dialog_got_it"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

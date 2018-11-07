@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_halfcircle_left"
+            android:orientation="vertical">
+
+            <!-- 个人信息 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/img_bg_me"
+                android:gravity="top"
+                android:orientation="vertical"
+                app:layout_heightPercent="45%sh">
+
+
+                <View
+                    android:id="@+id/statusBarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"></View>
+
+                <!-- 头像 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/prl_me_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/statusBarView"
+                    android:background="@null"
+                    app:layout_heightPercent="9%sh">
+
+
+                    <TextView
+                        android:id="@+id/title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="我的"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        app:layout_textSizePercent="5.5%w" />
+
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/prl_me_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/statusBarView"
+                    android:background="@null">
+
+                    <com.yunbaba.freighthelper.ui.customview.CircleImageView
+                        android:id="@+id/me_userinfo_avatar"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/me_icon_avatar"
+
+                        app:layout_heightPercent="37%h"
+
+                        app:layout_marginLeftPercent="5%w"
+                        app:layout_marginRightPercent="3%w"
+
+                        app:layout_widthPercent="37%h" />
+
+                    <!-- 昵称 -->
+
+                    <com.zhy.android.percent.support.PercentRelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/me_userinfo_avatar"
+                        android:orientation="vertical"
+
+                        app:layout_marginRightPercent="7%sw">
+
+                        <TextView
+                            android:id="@+id/me_userinfo_nickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:ellipsize="end"
+                            android:gravity="left|bottom"
+                            android:singleLine="true"
+                            android:text=""
+                            android:includeFontPadding="false"
+
+                            android:textColor="@color/white"
+                            app:layout_marginTopPercent="0%h"
+                            app:layout_textSizePercent="10%sw" />
+
+                        <!-- 帐号 -->
+
+                        <TextView
+                            android:id="@+id/me_userinfo_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/me_userinfo_nickname"
+                            android:text=""
+                            android:includeFontPadding="false"
+
+
+                            android:textColor="@color/white"
+                            android:layout_marginTop="-5dp"
+                            app:layout_textSizePercent="5%sw" />
+                    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/prl_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    app:layout_paddingPercent="2.2%sw">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_toLeftOf="@+id/iv_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        app:layout_marginRightPercent="2.2%sw"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        app:layout_textSizePercent="4.5%sw" />
+
+                    <ImageView
+                        android:id="@+id/iv_select"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:scaleType="fitXY"
+                        app:layout_marginRightPercent="2.2%sw"
+                        android:src="@drawable/ic_arrow_down_white"
+                        app:layout_heightPercent="3.7%sw"
+                        app:layout_widthPercent="2.7%sw" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 车辆信息 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_carinfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_normal_listitem"
+                app:layout_heightPercent="@string/me_heightPercent"
+                app:layout_marginTopPercent="0%sw"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <ImageView
+                    android:id="@+id/me_carinfo_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_icon_carindo"
+                    app:layout_heightPercent="@string/me_icon_heightPercent"
+                    app:layout_widthPercent="@string/me_icon_widthPercent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_carinfo_icon"
+                    android:text="@string/me_carinfo"
+                    android:textColor="@color/black"
+                    app:layout_paddingLeftPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_textSizePercent="4.8%sw" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/windows_color"
+
+                    android:layout_toRightOf="@+id/me_carinfo_icon"
+                    app:layout_marginLeftPercent="4%sw" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--<View-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/windows_color"-->
+
+                    <!--app:layout_marginLeftPercent="6%sw" />-->
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_contactinfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_normal_listitem"
+                app:layout_heightPercent="@string/me_heightPercent"
+                app:layout_marginTopPercent="0%sw"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+
+
+
+                <ImageView
+                    android:id="@+id/me_contactinfo_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_me_contact"
+                    app:layout_heightPercent="@string/me_icon_heightPercent"
+                    app:layout_widthPercent="@string/me_icon_widthPercent" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/windows_color"
+
+                    android:layout_toRightOf="@+id/me_contactinfo_icon"
+                    app:layout_marginLeftPercent="4%sw" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_contactinfo_icon"
+                    android:text="通讯录"
+                    android:textColor="@color/black"
+                    app:layout_paddingLeftPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_textSizePercent="4.8%sw" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+
+
+
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_markstore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_normal_listitem"
+                app:layout_heightPercent="@string/me_heightPercent"
+                app:layout_marginTopPercent="0%sw"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <ImageView
+                    android:id="@+id/me_markstore_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_me_markstore"
+                    app:layout_heightPercent="@string/me_icon_heightPercent"
+                    app:layout_widthPercent="@string/me_icon_widthPercent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_markstore_icon"
+                    android:text="我的标注"
+                    android:textColor="@color/black"
+                    app:layout_paddingLeftPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_textSizePercent="4.8%sw" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/windows_color"
+
+                    android:layout_toRightOf="@+id/me_markstore_icon"
+                    app:layout_marginLeftPercent="4%sw" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_reportinfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_normal_listitem"
+                android:visibility="gone"
+                app:layout_heightPercent="@string/me_heightPercent"
+                app:layout_marginTopPercent="0%sw"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <ImageView
+                    android:id="@+id/me_reportinfo_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_me_report"
+                    app:layout_heightPercent="@string/me_icon_heightPercent"
+                    app:layout_widthPercent="@string/me_icon_widthPercent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_reportinfo_icon"
+                    android:text="我的上报"
+                    android:textColor="@color/black"
+                    app:layout_paddingLeftPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_textSizePercent="4.8%sw" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+            <!-- 关于 -->
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--<View-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/windows_color"-->
+
+                    <!--app:layout_marginLeftPercent="6%sw" />-->
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/me_about"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_normal_listitem"
+                app:layout_heightPercent="@string/me_heightPercent"
+                app:layout_marginBottomPercent="5%sh"
+                app:layout_marginTopPercent="0%sw"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <ImageView
+                    android:id="@+id/me_about_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/me_icon_about"
+                    app:layout_heightPercent="@string/me_icon_heightPercent"
+                    app:layout_widthPercent="@string/me_icon_widthPercent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/me_about_icon"
+                    android:text="@string/me_about"
+                    android:textColor="@color/black"
+                    app:layout_paddingLeftPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_textSizePercent="4.8%sw" />
+
+
+                <ImageView
+                    android:id="@+id/iv_updateredpoint"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_about"
+                    android:src="@drawable/img_readpoint"
+                    android:visibility="gone"
+                    app:layout_heightPercent="15%h"
+                    app:layout_marginRightPercent="@string/me_name_paddingLeftPercent"
+                    app:layout_widthPercent="15%h" />
+
+                <ImageView
+                    android:id="@+id/iv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

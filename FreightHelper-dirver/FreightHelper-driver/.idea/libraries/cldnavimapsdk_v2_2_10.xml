@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cldnavimapsdk_v2.2.10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cldOlsHuoyun/libs/cldnavimapsdk_v2.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

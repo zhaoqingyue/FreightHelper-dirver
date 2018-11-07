@@ -1,0 +1,99 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id = "@+id/scanf_title"
+        layout = "@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+    />
+    <com.zhy.android.percent.support.PercentLinearLayout 
+        android:layout_below="@id/scanf_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   		android:background="@color/windows_color"
+   		android:gravity="center_horizontal"
+   		android:orientation="vertical" >
+   		<ImageView android:layout_width="wrap_content"
+   		    android:layout_height="0dp"
+   		    android:src="@drawable/ic_scan_barcode"
+   		    android:scaleType="centerInside"
+   		    app:layout_heightPercent= "2.1%sh"
+   		    app:layout_marginTopPercent="7.65%sh" 
+   		    android:visibility="gone"
+   		  />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请将条码下方号码输入"
+            android:textColor="@color/scan_text_gray"
+            app:layout_textSizePercent= "2.14%sh"
+   		    app:layout_marginTopPercent="11.7%sh" />
+        
+        <EditText android:id="@+id/waybill_edit" 
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/waybill_edit_bg"
+            app:layout_heightPercent= "7.65%sh"
+            app:layout_widthPercent = "80%sw"
+            app:layout_marginTopPercent="4.16%sh"
+            android:singleLine="true"
+            android:hint="请输入条码号"
+            android:textColor="@color/edittext_normal_color"
+            android:textColorHint="@color/edittext_hint_color"
+            app:layout_textSizePercent= "2.3%sh"
+            app:layout_paddingLeftPercent = "6%sw"
+            app:layout_paddingRightPercent = "6%sw"
+         />
+        
+       	<Button android:id="@+id/waybill_upload"
+	   	    android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    style="?android:attr/borderlessButtonStyle"
+	   	    android:layout_gravity="center_horizontal"
+	   	    app:layout_heightPercent = "7.6%sh"
+	   	    app:layout_widthPercent = "80%sw"
+	   	    app:layout_marginTopPercent="4.16%sh" 
+	   	    android:text="上传"
+	   	    android:textColor="@color/white"
+	   	    app:layout_textSizePercent ="2.7%sh"
+	   	    android:background="@drawable/waybill_autoscan_btn_bg"
+	   	    />
+        
+       	<com.zhy.android.percent.support.PercentRelativeLayout
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_gravity="center_horizontal"
+	   	    android:layout_height="0dp"
+	   	    app:layout_heightPercent = "25%sh">
+	   	    <ImageView android:src="@drawable/ic_scan_time"
+	   	        android:id="@+id/waybill_img1"
+	   	        android:layout_alignParentBottom="true"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="0dp"
+	   	        android:scaleType="centerInside"
+	   	        app:layout_heightPercent = "2.7%sh"
+	   	     />
+	   	    <TextView android:layout_toRightOf="@id/waybill_img1"
+	   	        android:id="@+id/waybill_checkrecord"
+	   	        android:layout_alignParentBottom="true"
+	   	        android:text="查看扫描记录"
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:textColor="@color/black3"
+	   	        app:layout_textSizePercent = "2.4%sh"
+	   	        />
+	   	</com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    
+    <include layout = "@layout/layout_scan_foot"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14.06%sh"
+     />
+    
+  </com.zhy.android.percent.support.PercentRelativeLayout>

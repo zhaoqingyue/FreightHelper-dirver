@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_msg_task_general_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--TIME-->
+        <TextView
+            android:id="@+id/business_msg_task_general_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_msg_time_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="2017-03-23 09:53"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="4%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!--CONTENT-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_msg_content_bg"
+        app:layout_marginLeftPercent="@string/msg_marginLeftPercent"
+        app:layout_marginRightPercent="@string/msg_marginRightPercent">
+
+        <!--TITLE ICON-->
+        <ImageView
+            android:id="@+id/business_msg_task_general_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/msg_business_task"
+            app:layout_heightPercent="7%w"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_widthPercent="12%w" />
+
+        <!--TITILE TEXT-->
+        <TextView
+            android:id="@+id/business_msg_task_general_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/business_msg_task_general_item_icon"
+            android:layout_alignTop="@+id/business_msg_task_general_item_icon"
+            android:layout_toRightOf="@+id/business_msg_task_general_item_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/msg_business_task_general"
+            android:textColor="@color/black"
+            app:layout_textSizePercent="5.5%w" />
+
+        <!--CHECK DETAIL TEXT-->
+        <TextView
+            android:id="@+id/business_msg_task_general_item_check_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/business_msg_task_general_item_icon"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/msg_business_task_general_check_detail"
+            android:textColor="#e6332f"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4%w" />
+
+        <!--SEPARATOR LINE-->
+        <View
+            android:id="@+id/business_msg_task_general_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/business_msg_task_general_item_icon"
+            android:background="@color/black2" />
+
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rll_msgcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_task_general_item_line"
+
+            >
+
+
+            <TextView
+                android:id="@+id/business_msg_task_general_item_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp"
+                android:text="收到一个新任务(共X个运货单)，请在任务页面等待运输列表中查看 "
+                android:textColor="@color/black"
+                app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+                app:layout_textSizePercent="4.5%w"
+
+                />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rll_newtask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_hint_task_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingTop="10dp"
+                    android:text="@string/msg_business_task_general_hint_task_id"
+                    android:textColor="@color/black1"
+                    app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_task_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/business_msg_task_general_item_hint_task_id"
+                    android:layout_toRightOf="@id/business_msg_task_general_item_hint_task_id"
+                    android:text="1265ER878966"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_hint_vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/business_msg_task_general_item_hint_task_id"
+                    android:paddingBottom="15dp"
+                    android:text="@string/msg_business_task_general_hint_vehicle"
+                    android:textColor="@color/black1"
+                    app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/business_msg_task_general_item_hint_vehicle"
+                    android:layout_toRightOf="@id/business_msg_task_general_item_hint_vehicle"
+                    android:text="粤B756F2"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_delivery_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/business_msg_task_general_item_hint_vehicle"
+                    android:hint="999"
+                    android:text="999"
+                    android:textColor="@color/black"
+                    app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/business_msg_task_general_item_hint_delivery_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/business_msg_task_general_item_hint_vehicle"
+                    android:layout_toLeftOf="@id/business_msg_task_general_item_delivery_points"
+                    android:text="@string/msg_business_task_general_delivery_points"
+                    android:textColor="@color/black1"
+                    app:layout_textSizePercent="4.5%w" />
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <!--CORP TEXT-->
+        <TextView
+            android:id="@+id/business_msg_task_general_item_corpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rll_msgcontent"
+            android:paddingBottom="20dp"
+            android:text="马蹄圈物流公司"
+            android:textColor="@color/black1"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

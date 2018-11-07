@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/waybill_progress_bg">
+    </item>
+    
+    
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="1.5dip" />
+                <gradient
+                        android:startColor="@color/scan_progress"
+                        android:centerColor="@color/scan_progress"
+                        android:centerY="0.75"
+                        android:endColor="@color/scan_progress"
+                        android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    
+   <!--  <item android:id="@android:id/progress">
+   		这样设置不行
+         <shape>
+            <corners android:radius="1.5dip" />
+            <solid android:color="@color/scan_progress"/>
+        </shape>
+    </item> -->
+
+</layer-list>

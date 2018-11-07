@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 任务 -->
+
+    <TextView
+        android:id="@+id/msg_switch_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+        app:layout_textSizePercent="4.5%w"
+        android:background="@color/windows_color"
+        android:gravity="center_vertical"
+        android:text="@string/switch_task"
+        android:textColor="@color/text_normal_color" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/msg_switch_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+            android:background="@color/windows_color" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- 运单超时报警 -->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/switch_timeout_alarm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+        app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/msg_switch_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_textSizePercent="5%w"
+            android:text="@string/switch_waybill_timeout_alarm"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/msg_switch_checkbox"
+            style="@style/msg_switch_style"
+            android:visibility="visible" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/prl_tasklist_foot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_finishtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_marginBottomPercent="8%sw"
+        app:layout_marginLeftPercent="8%sw"
+        app:layout_marginRightPercent="8%sw"
+        app:layout_marginTopPercent="6.5%sw"
+        app:layout_textSizePercent="@string/textsize_little_title"
+        android:text="@string/lookover_finish_tasklist"
+        android:textColor="@color/tasklist_text_color"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

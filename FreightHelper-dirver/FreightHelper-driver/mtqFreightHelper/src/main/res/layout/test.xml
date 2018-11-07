@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/temper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="18%h"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/centerline"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            
+            android:layout_centerHorizontal="true" />
+
+        <!-- #1 -->
+
+        <ImageView
+            android:id="@+id/img_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="18%h"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginTopPercent="18%h"
+            app:layout_widthPercent="18%h"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_temperature" />
+
+        <TextView
+            android:id="@+id/tv_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_temp1"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_marginTopPercent="15%h"
+            app:layout_textSizePercent="12.7%h"
+            android:text="1#"
+            android:textColor="@color/bar_text_color" />
+
+        <TextView
+            android:id="@+id/tv_car_condition_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_temp1"
+            android:layout_toRightOf="@+id/tv_temp1"
+            app:layout_marginLeftPercent="1.8%w"
+            android:layout_toLeftOf="@+id/centerline"
+            app:layout_textSizePercent="15.5%h"
+            android:text="测试测试         asdsa"
+            android:singleLine="true"
+            android:textColor="@color/black3" />
+
+        <com.yunbaba.freighthelper.ui.customview.SpringProgressView
+            android:id="@+id/sp_temp1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_temp1"
+            android:layout_toRightOf="@+id/img_temp1"
+            app:layout_heightPercent="2.8%h"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_widthPercent="23.9%w" />
+
+        <!-- #3 -->
+
+        <ImageView
+            android:id="@+id/img_temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sp_temp1"
+         app:layout_heightPercent="18%h"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginTopPercent="18%h"
+            app:layout_widthPercent="18%h"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_temperature" />
+
+        <TextView
+            android:id="@+id/tv_temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_temp1"
+            android:layout_toRightOf="@+id/img_temp3"
+           app:layout_marginLeftPercent="4.8%w"
+            app:layout_marginTopPercent="15%h"
+            app:layout_textSizePercent="12.7%h"
+            android:text="3#"
+            android:textColor="@color/bar_text_color" />
+
+        <TextView
+            android:id="@+id/tv_car_condition_temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_temp3"
+            android:layout_toRightOf="@+id/tv_temp3"
+            app:layout_marginLeftPercent="1.8%w"
+            app:layout_textSizePercent="15.5%h"
+            android:text="暂无数据         "
+            android:textColor="@color/black3" />
+
+        <com.yunbaba.freighthelper.ui.customview.SpringProgressView
+            android:id="@+id/sp_temp3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_temp3"
+            android:layout_toRightOf="@+id/img_temp3"
+             app:layout_heightPercent="2.8%h"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_widthPercent="23.9%w" />
+
+        <!-- #2 -->
+
+        <ImageView
+            android:id="@+id/img_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/centerline"
+            app:layout_heightPercent="18%h"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginTopPercent="18%h"
+            app:layout_widthPercent="18%h"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_temperature" />
+
+        <TextView
+            android:id="@+id/tv_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_temp2"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_marginTopPercent="15%h"
+            app:layout_textSizePercent="12.7%h"
+            android:text="2#"
+            android:textColor="@color/bar_text_color" />
+
+        <TextView
+            android:id="@+id/tv_car_condition_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_temp2"
+            android:layout_toRightOf="@+id/tv_temp2"
+          app:layout_marginLeftPercent="1.8%w"
+            app:layout_textSizePercent="15.5%h"
+            android:text="暂无数据         "
+            android:textColor="@color/black3" />
+
+        <com.yunbaba.freighthelper.ui.customview.SpringProgressView
+            android:id="@+id/sp_temp2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_temp2"
+            android:layout_toRightOf="@+id/img_temp2"
+             app:layout_heightPercent="2.8%h"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_widthPercent="23.9%w" />
+        <!-- #4 -->
+
+        <ImageView
+            android:id="@+id/img_temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_temp2"
+            android:layout_toRightOf="@+id/centerline"
+            app:layout_heightPercent="3.3%sh"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginTopPercent="4.8%sh"
+            app:layout_widthPercent="3.3%sh"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_temperature"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_temp2"
+            android:layout_toRightOf="@+id/img_temp4"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_marginTopPercent="4.4%sh"
+            app:layout_textSizePercent="2.3%sh"
+            android:text="4#"
+            android:textColor="@color/bar_text_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_car_condition_temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_temp4"
+            android:layout_toRightOf="@+id/tv_temp4"
+            app:layout_marginLeftPercent="1.8%w"
+            app:layout_textSizePercent="2.8%sh"
+            android:text="暂无数据         "
+            android:textColor="@color/black3"
+            android:visibility="gone" />
+
+        <com.yunbaba.freighthelper.ui.customview.SpringProgressView
+            android:id="@+id/sp_temp4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_temp4"
+            android:layout_toRightOf="@+id/img_temp4"
+            app:layout_heightPercent="0.5%sh"
+            app:layout_marginLeftPercent="4.8%w"
+            app:layout_widthPercent="23.9%w"
+            android:visibility="gone" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

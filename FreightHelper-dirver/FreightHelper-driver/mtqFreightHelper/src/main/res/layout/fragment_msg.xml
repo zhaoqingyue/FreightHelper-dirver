@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <View
+        android:id="@+id/statusBarView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></View>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_msg_title" />
+
+        <!-- 企业消息 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/msg_business_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="13%"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/msg_business_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="60%h"
+                app:layout_widthPercent="60%h"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/msg_icon_business" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                 app:layout_paddingLeftPercent="5%w"
+                android:layout_toRightOf="@+id/msg_business_icon"
+                android:orientation="vertical" >
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/msg_business_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/msg_business_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="5.2%sw"
+                        android:text="@string/msg_business_msg"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/msg_business_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        app:layout_textSizePercent="4.8%sw"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/msg_business_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/msg_business_title_layout"
+                    android:layout_alignParentBottom="true"
+                    app:layout_textSizePercent="4.2%sw"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <!--Separate Line-->
+            <View
+                android:id="@+id/msg_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/msg_business_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/msg_business_content"
+                android:background="@color/windows_color" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 报警消息 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/msg_alarm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="13%"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/msg_alarm_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="60%h"
+                
+                app:layout_widthPercent="60%h"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/msg_icon_alarm" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:layout_paddingLeftPercent="5%w"
+                android:layout_toRightOf="@+id/msg_alarm_icon"
+                android:orientation="vertical" >
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/msg_alarm_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/msg_alarm_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="5.2%sw"
+                        android:text="@string/msg_alarm_msg"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/msg_alarm_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        app:layout_textSizePercent="4.8%sw"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/msg_alarm_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/msg_alarm_title_layout"
+                    android:layout_alignParentBottom="true"
+                    app:layout_textSizePercent="4.2%sw"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_normal_color" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/msg_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/app_color2"
+                android:layout_gravity="center"
+                android:indeterminate="false" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 无消息 -->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/msg_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_heightPercent="40%w"
+                app:layout_paddingBottomPercent="5%w"
+                app:layout_paddingLeftPercent="5%w"
+                app:layout_paddingRightPercent="5%w"
+                app:layout_paddingTopPercent="5%w"
+                app:layout_widthPercent="40%w"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_no_msg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:layout_marginBottomPercent="5%w"
+                app:layout_textSizePercent="4.5%sw"
+                android:gravity="center_horizontal"
+                android:text="您还没有收到任何消息"
+                android:textColor="@color/black" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

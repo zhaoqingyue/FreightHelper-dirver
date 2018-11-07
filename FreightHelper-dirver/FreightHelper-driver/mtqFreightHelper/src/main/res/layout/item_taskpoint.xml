@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_normal_listitem"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/iv_select"
+            app:layout_paddingBottomPercent="0%w"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_paddingRightPercent="5%w"
+            app:layout_paddingTopPercent="5%w"
+            app:layout_textSizePercent="5%w"
+            android:gravity="center_vertical"
+            android:text="1.菜鸟物流"
+            android:textColor="@color/black_text" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="15%w"
+            app:layout_paddingPercent="5%w"
+            app:layout_widthPercent="15%w"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_check_circle_no"
+            android:visibility="visible" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pll_taskpoint_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_title"
+            android:layout_toLeftOf="@+id/iv_select"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_marginRightPercent="0%w"
+            app:layout_paddingTopPercent="0%w"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingRightPercent="3%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+               app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="0%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="1.菜鸟物流"
+                android:textColor="@color/black_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pll_taskpoint_detail_kcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pll_taskpoint_detail_address"
+            android:layout_toLeftOf="@+id/iv_select"
+            app:layout_paddingLeftPercent="5%w"
+            app:layout_marginRightPercent="0%w"
+            android:orientation="horizontal"
+            
+            
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingRightPercent="3%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="@string/contact"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="0%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="1.菜鸟物流"
+                android:textColor="@color/black_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/pll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pll_taskpoint_detail_kcode"
+            android:layout_toLeftOf="@+id/iv_select"
+           app:layout_paddingLeftPercent="5%w"
+            app:layout_marginRightPercent="0%w"
+            app:layout_paddingBottomPercent="0%w"
+            android:orientation="horizontal" 
+         
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingRightPercent="3%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/iv_select"
+                app:layout_paddingBottomPercent="0%w"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="0%w"
+                app:layout_textSizePercent="5%w"
+                android:gravity="center_vertical"
+                android:text="1.菜鸟物流"
+                android:textColor="@color/black_text" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_heightPercent="5%w"
+        >
+    </View>
+
+    <View
+        android:id="@+id/v_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        app:layout_marginLeftPercent="5%w"
+       
+        android:background="@color/tasklist_stroke"
+        android:orientation="horizontal" >
+    </View>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

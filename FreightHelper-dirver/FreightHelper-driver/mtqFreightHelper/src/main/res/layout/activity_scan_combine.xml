@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <SurfaceView
+        android:id="@+id/rich_scan_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/scan_viewfinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="9%h"
+        android:background="@color/black"
+        android:clipToPadding="true" >
+
+        <ImageView
+            android:id="@+id/title_left_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_widthPercent="100%h"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_textSizePercent="5.5%w"
+            android:text="扫码登录"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/title_right_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingBottomPercent="25%h"
+            app:layout_paddingLeftPercent="25%h"
+            app:layout_paddingRightPercent="25%h"
+            app:layout_paddingTopPercent="25%h"
+            app:layout_widthPercent="110%h"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_textSizePercent="5%w"
+            android:visibility="gone" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="21.5%h"
+            app:layout_textSizePercent="4.5%w"
+            android:text="将二维码/条码放入框内，即可自动扫描"
+            android:textColor="@color/white" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="15%h"
+            android:background="@color/black"
+            android:orientation="horizontal" >
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/prl_qrlogincode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="50%w" >
+
+                <ImageView
+                    android:id="@+id/iv_qrcodelogin"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="11%w"
+                    app:layout_marginTopPercent="12%w"
+                    app:layout_widthPercent="11%w"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_qrcode_normal" />
+
+                <TextView
+                    android:id="@+id/tv_qrcodelogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_qrcodelogin"
+                    android:layout_centerHorizontal="true"
+                    app:layout_marginTopPercent="5.4%w"
+                    app:layout_textSizePercent="9.2%w"
+                    android:text="扫码"
+                    android:textColor="@color/white" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/prl_order_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_widthPercent="50%w" >
+
+                <ImageView
+                    android:id="@+id/iv_ordercode"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="11%w"
+                    app:layout_marginTopPercent="12%w"
+                    app:layout_widthPercent="15%w"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_barcode_normal" />
+
+                <TextView
+                    android:id="@+id/tv_ordercode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_ordercode"
+                    android:layout_centerHorizontal="true"
+                    app:layout_marginTopPercent="5.4%w"
+                    app:layout_textSizePercent="9.2%w"
+                    android:text="扫货单"
+                    android:textColor="@color/white" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentFrameLayout>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/travel_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+        layout="@layout/layout_title" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_travel_detail_start_dest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/travel_detail_title"
+        app:layout_heightPercent="12.4%sh"
+        app:layout_paddingLeftPercent="@string/travel_detail_padding_left"
+        app:layout_paddingRightPercent="@string/travel_detail_padding_left"
+        app:layout_paddingTopPercent="2%sh"
+        android:background="#333333" >
+
+        <TextView
+            android:id="@+id/tv_travel_detail_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_textSizePercent="4.72%sw"
+            android:text="起点"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:layout_textSizePercent="4.72%sw"
+            android:gravity="right"
+            android:text="终点"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_travel_detail_start"
+            app:layout_textSizePercent="4.3%sw"
+            android:text="2017/3/26 12:36"
+            android:textColor="@color/clear_edit_color" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_dest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_travel_detail_dest"
+            app:layout_textSizePercent="4.3%sw"
+            android:gravity="right"
+            android:text="2017/3/26 18:36"
+            android:textColor="@color/clear_edit_color" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_travel_detail_start_time"
+            app:layout_heightPercent="1.9%sh"
+            app:layout_marginTopPercent="0.5%sh"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_start_dest" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_travel_detail_carlicense"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_travel_detail_start_dest"
+        app:layout_heightPercent="4.92%sh"
+        app:layout_paddingLeftPercent="@string/travel_detail_padding_left"
+        app:layout_paddingRightPercent="@string/travel_detail_padding_left"
+        app:layout_paddingTopPercent="1.5%sh"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/img_travel_detail_licence"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/tv_travel_detail_licence"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="2.6%sh"
+            app:layout_widthPercent="5.56%sw"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_task_startdeliver_n" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_licence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img_travel_detail_licence"
+            app:layout_textSizePercent="4.2%sw"
+            android:text=""
+            android:textColor="@color/black" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_travel_detail_waybill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_travel_detail_carlicense"
+        app:layout_minHeightPercent="4.92%sh"
+        app:layout_paddingLeftPercent="@string/travel_detail_padding_left"
+        app:layout_paddingRightPercent="@string/travel_detail_padding_left"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/img_travel_detail_waybill"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tv_travel_detail_waybill"
+            app:layout_heightPercent="2.6%sh"
+            app:layout_marginTopPercent="0.8%sh"
+            app:layout_widthPercent="5.56%sw"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_finish_task_n" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_waybill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_travel_detail_licence"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img_travel_detail_waybill"
+            app:layout_marginTopPercent="0.8%sh"
+            app:layout_maxWidthPercent="42%sw"
+            app:layout_textSizePercent="4.2%sw"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_check_waybill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_travel_detail_waybill"
+            app:layout_textSizePercent="4.2%sw"
+            android:gravity="right"
+            android:text="查看运单详情"
+            android:textColor="@color/bar_text_color_select" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_travel_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_travel_detail_waybill"
+        app:layout_paddingBottomPercent="@string/travel_detail_padding_top"
+        app:layout_paddingRightPercent="@string/travel_detail_padding_left"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_travel_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:layout_marginLeftPercent="13.8%sw"
+            app:layout_textSizePercent="4.4%sw"
+            android:background="@color/white"
+            android:text="\n"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_travel_detail_poi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignTop="@+id/tv_travel_detail_address"
+            android:layout_marginTop="3dp"
+            app:layout_heightPercent="2.6%sh"
+            app:layout_marginLeftPercent="@string/travel_detail_padding_left"
+            app:layout_widthPercent="5.56%sw"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_poi" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_travel_detail_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_travel_detail_address"
+        android:background="@color/scanrecord_list_title_bg" >
+    </FrameLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_travel_detail_car_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_travel_detail_address"
+        app:layout_heightPercent="38%sh"
+        app:layout_marginRightPercent="3.6%sw"
+        app:layout_marginTopPercent="2%sh"
+        app:layout_widthPercent="38%sw"
+        android:background="@drawable/shape_travel_detal_car_info_bg"
+        android:orientation="vertical" >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_total_fuel" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_total_fuel"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_hundred_fuel" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_hundred_fuel"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_idle_speed_fuel" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_idle_speed_fuel"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_idle_speed_time" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_idle_speed_time"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_total_time" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_total_time"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_total_mileage" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_total_mileage"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_max_speed" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_max_speed"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_paddingLeftPercent="@string/travel_detail_pop_padding_left"
+            app:layout_paddingRightPercent="@string/travel_detail_pop_padding_left" >
+
+            <TextView
+                style="@style/travel_detail_pop_left"
+                android:text="@string/car_condition_average_speed" />
+
+            <TextView
+                android:id="@+id/tv_travel_detail_average_speed"
+                style="@style/travel_detail_pop_right"
+                android:text="" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <Button
+        android:id="@+id/btn_travel_detail_drive_evaluation"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="6.7%sh"
+        app:layout_marginBottomPercent="3.64%sh"
+        app:layout_textSizePercent="4.5%sw"
+        app:layout_widthPercent="36.7%sw"
+        android:background="@drawable/waybill_autoscan_btn_bg"
+        android:text="驾驶测评"
+        android:textColor="@color/white" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/travel_detail_order_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+
+        <ImageView
+            android:id="@+id/travel_detail_order_detail_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#222222" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_marginBottomPercent="43.4%sw"
+            app:layout_marginLeftPercent="9.2%sw"
+            app:layout_marginRightPercent="9.2%sw"
+            app:layout_marginTopPercent="43.4%sw"
+            android:orientation="vertical" >
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                app:layout_heightPercent="14.8%sw"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/travel_detail_order_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:layout_marginLeftPercent="4%sw"
+                    app:layout_textSizePercent="5%sw"
+                    android:text="运单详情(10)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/travel_detail_order_detail_cancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    app:layout_heightPercent="12%sw"
+                    app:layout_paddingBottomPercent="5%sw"
+                    app:layout_paddingLeftPercent="5%sw"
+                    app:layout_paddingRightPercent="3%sw"
+                    app:layout_paddingTopPercent="3%sw"
+                    app:layout_widthPercent="12%sw"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_cancel_nor" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <ListView
+                android:id="@+id/travel_detail_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

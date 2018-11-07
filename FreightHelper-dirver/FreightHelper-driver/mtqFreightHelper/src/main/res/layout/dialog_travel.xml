@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.yunbaba.freighthelper.ui.customview.Triangle
+        android:id="@+id/travel_triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/travel_title"
+        app:layout_paddingRightPercent="3%w" />
+
+    <TextView
+        android:id="@+id/travel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@+id/travel_triangle"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_marginRightPercent="3%w"
+        app:layout_paddingLeftPercent="5%w"
+        app:layout_paddingRightPercent="5%w"
+        app:layout_textSizePercent="4.5%w"
+        android:background="@drawable/selector_bth_white_bg"
+        android:gravity="center"
+        android:text="最近一次行程"
+        android:textColor="@color/black" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

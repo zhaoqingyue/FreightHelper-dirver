@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prl_tasklist_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_transporting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_marginBottomPercent="2%sw"
+            app:layout_marginLeftPercent="9%sw"
+            app:layout_marginRightPercent="7%sw"
+            app:layout_marginTopPercent="2%sw"
+            app:layout_textSizePercent="@string/textsize_little_title"
+            android:text="@string/transporting"
+            android:textColor="@color/app_color"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pll_tasklist_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginBottomPercent="4%sw"
+            app:layout_marginLeftPercent="3%sw"
+            app:layout_marginRightPercent="3%sw"
+            app:layout_marginTopPercent="0%sw"
+            android:background="@drawable/round_background_appcolor"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="2%sw" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginBottomPercent="3%sw"
+                    app:layout_marginLeftPercent="7%sw"
+                    app:layout_marginRightPercent="3%sw"
+                    app:layout_marginTopPercent="3%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="center"
+                    android:text="@string/issued"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginBottomPercent="1.5%sw"
+                    app:layout_marginTopPercent="1.5%sw"
+                    android:background="@color/tasklist_stroke" />
+
+                <TextView
+                    android:id="@+id/tv_carlicense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginBottomPercent="3%sw"
+                    app:layout_marginLeftPercent="3%sw"
+                    app:layout_marginRightPercent="3%sw"
+                    app:layout_marginTopPercent="3%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/tasklist_stroke"
+                    android:orientation="horizontal" >
+                </View>
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:layout_marginRightPercent="7%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="center"
+                    android:text="1/2"
+                    android:textColor="@color/tasklist_text_color" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                app:layout_marginBottomPercent="3%sw"
+                android:background="@color/tasklist_stroke" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_marginBottomPercent="8%sw"
+                app:layout_marginLeftPercent="7%sw"
+                app:layout_marginRightPercent="5%sw" >
+
+                <TextView
+                    android:id="@+id/tv_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    app:layout_marginBottomPercent="1%sw"
+                    app:layout_marginRightPercent="7%sw"
+                    app:layout_marginTopPercent="0%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/send_to_several_point"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_totalkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_route"
+                    app:layout_marginBottomPercent="1%sw"
+                    app:layout_marginRightPercent="7%sw"
+                    app:layout_marginTopPercent="0%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/info_total_km"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_totalkm"
+                    android:layout_toLeftOf="@+id/tv_stoptask"
+                    app:layout_marginBottomPercent="1%sw"
+                    app:layout_marginRightPercent="7%sw"
+                    app:layout_marginTopPercent="0%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/info_goods"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_good"
+                    android:layout_toLeftOf="@+id/tv_stoptask"
+                    app:layout_marginRightPercent="0%sw"
+                    app:layout_marginTopPercent="0%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:gravity="left|center_vertical"
+                    android:text="xxxxxxxxx"
+                    android:textColor="@color/tasklist_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_stoptask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_company"
+                    android:layout_alignParentRight="true"
+                    app:layout_marginLeftPercent="5%sw"
+                    app:layout_paddingBottomPercent="3%sw"
+                    app:layout_paddingLeftPercent="5%sw"
+                    app:layout_paddingRightPercent="5%sw"
+                    app:layout_paddingTopPercent="3%sw"
+                    app:layout_textSizePercent="4.3%sw"
+                    android:background="@drawable/round_background_appcolor_full"
+                    android:text="@string/task_stop"
+                    android:textColor="@color/white" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:id="@+id/tv_waiting_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_marginBottomPercent="0%sw"
+            app:layout_marginLeftPercent="9%sw"
+            app:layout_marginRightPercent="7%sw"
+            app:layout_marginTopPercent="2%sw"
+            app:layout_textSizePercent="@string/textsize_little_title"
+            android:text="@string/transport_status_stop"
+            android:textColor="@color/tasklist_text_color"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

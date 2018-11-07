@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+        layout="@layout/layout_title" />
+
+    <!-- 企业 -->
+    
+      <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color">
+    
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/contacts_company"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/contacts_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/contacts_company_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="@string/contacts_icon_heightPercent"
+                app:layout_widthPercent="@string/contacts_icon_widthPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_icon_business" />
+
+            <TextView
+                android:id="@+id/contacts_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/contacts_company_icon"
+                app:layout_paddingLeftPercent="@string/contacts_name_paddingLeftPercent"
+                app:layout_textSizePercent="4.8%w"
+                android:text="@string/contacts_company"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/contacts_company_name"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="3%w"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 门店 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/contacts_store"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/contacts_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/contacts_store_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="@string/contacts_icon_heightPercent"
+                app:layout_widthPercent="@string/contacts_icon_widthPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_icon_store" />
+
+            <TextView
+                android:id="@+id/contacts_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/contacts_store_icon"
+                app:layout_paddingLeftPercent="@string/contacts_name_paddingLeftPercent"
+                app:layout_textSizePercent="4.8%w"
+                android:text="@string/contacts_store"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/contacts_store_name"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="3%w"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 配送中心 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/contacts_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/contacts_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/contacts_delivery_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="@string/contacts_icon_heightPercent"
+                app:layout_widthPercent="@string/contacts_icon_widthPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_icon_delivery" />
+
+            <TextView
+                android:id="@+id/contacts_delivery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/contacts_delivery_icon"
+                app:layout_paddingLeftPercent="@string/contacts_name_paddingLeftPercent"
+                app:layout_textSizePercent="4.8%w"
+                android:text="@string/contacts_delivery"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/contacts_delivery_name"
+                android:layout_alignParentBottom="true"
+                app:layout_marginLeftPercent="3%w"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 客户信息 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/contacts_customer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/contacts_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            android:background="@drawable/selector_bth_white_bg" >
+
+            <ImageView
+                android:id="@+id/contacts_customer_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="@string/contacts_icon_heightPercent"
+                app:layout_widthPercent="@string/contacts_icon_widthPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_icon_customer" />
+
+            <TextView
+                android:id="@+id/contacts_customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/contacts_customer_icon"
+                app:layout_paddingLeftPercent="@string/contacts_name_paddingLeftPercent"
+                app:layout_textSizePercent="4.8%w"
+                android:text="@string/contacts_customer"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_right" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/pb_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/app_color2"
+                android:clickable="true"
+                android:indeterminate="false" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/id_contacts_item_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_paddingBottomPercent="2.5%w"
+        app:layout_paddingLeftPercent="7%w"
+        app:layout_paddingRightPercent="5%w"
+        app:layout_paddingTopPercent="2.5%w"
+        app:layout_textSizePercent="4.5%w"
+        android:text="C"
+        android:textColor="@color/black" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/id_contacts_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_contacts_item_letter"
+        android:layout_gravity="center_vertical"
+         app:layout_paddingBottomPercent="3%w"
+        app:layout_paddingLeftPercent="5%w"
+        app:layout_paddingRightPercent="5%w"
+        app:layout_paddingTopPercent="3%w"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/id_contacts_item_first"
+              android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            app:layout_textSizePercent="4.2%w"
+            app:layout_widthPercent="10%w"
+            android:background="@drawable/shape_circle_bg_gray"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="菜"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/id_contacts_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_paddingLeftPercent="4%w"
+            app:layout_paddingRightPercent="4%w"
+            android:layout_alignBottom="@+id/id_contacts_item_first"
+            android:layout_alignTop="@+id/id_contacts_item_first"
+            android:layout_toRightOf="@+id/id_contacts_item_first"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center_vertical"
+            android:text="菜鸟物流"
+            android:textColor="@color/black" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/id_contacts_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="68dp"
+        android:background="@color/windows_color"
+        android:visibility="gone" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

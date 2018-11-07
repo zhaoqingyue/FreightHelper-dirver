@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <!-- 设备类型 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/deviceinfo_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="@string/deviceinfo_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/deviceinfo_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/deviceinfo_type"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/deviceinfo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/deviceinfo_marginRightPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="OBD"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 设备号 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/deviceinfo_serial_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_heightPercent="@string/deviceinfo_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/deviceinfo_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/deviceinfo_serial"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/deviceinfo_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/deviceinfo_marginRightPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="XXXXAAAAAAI888"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 设备SIM过期时间 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/deviceinfo_expirate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_heightPercent="@string/deviceinfo_heightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_marginLeftPercent="@string/deviceinfo_marginLeftPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="@string/deviceinfo_expirate"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:id="@+id/deviceinfo_expirate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_marginRightPercent="@string/deviceinfo_marginRightPercent"
+                app:layout_textSizePercent="5%w"
+                android:text="2019-10-09"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

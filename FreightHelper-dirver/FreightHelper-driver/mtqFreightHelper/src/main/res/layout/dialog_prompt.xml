@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="27%"
+        app:layout_widthPercent="90%"
+        android:background="@drawable/shape_prompt_dialog_bg" >
+
+        <TextView
+            android:id="@+id/dialog_prompt_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="65%"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            app:layout_textSizePercent="7%w"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/dialog_prompt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            app:layout_heightPercent="25%"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_textSizePercent="7%w"
+            app:layout_widthPercent="43.5%"
+            android:background="@drawable/selector_bth_gray_bg"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/dialog_prompt_sure"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="25%"
+            app:layout_marginBottomPercent="10%"
+            app:layout_marginRightPercent="5%"
+            app:layout_textSizePercent="7%w"
+            app:layout_widthPercent="43.5%"
+            android:background="@drawable/selector_bth_red_bg"
+            android:gravity="center"
+            android:text="@string/dialog_sure"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

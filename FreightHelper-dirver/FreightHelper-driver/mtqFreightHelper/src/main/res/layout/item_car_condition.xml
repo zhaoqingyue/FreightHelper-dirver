@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_paddingPercent="5%w"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/car_condition_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="20%w"
+            app:layout_widthPercent="20%w"
+            android:background="#00ffff"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_heightPercent="20%w"
+            app:layout_paddingLeftPercent="4.5%w"
+            app:layout_paddingRightPercent="3%w"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/car_condition_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="9%w"
+                android:text="粤B6PW09"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="9.5%w"
+                    android:text="@string/car_item_brand"
+                    android:textColor="@color/text_normal_color" />
+
+                <TextView
+                    android:id="@+id/car_condition_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="9.5%w"
+                    android:text="东风凯普特"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/black" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="9.5%w"
+                    android:text="@string/car_item_model"
+                    android:textColor="@color/text_normal_color" />
+
+                <TextView
+                    android:id="@+id/car_condition_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="9.5%w"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="凯普特N280000"
+                    android:textColor="@color/black" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            android:id="@+id/car_condition_status"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            app:layout_heightPercent="7%w"
+            app:layout_widthPercent="16%w"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_car_status" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/windows_color" />
+
+    <TextView
+        android:id="@+id/car_condition_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bth_white_bg"
+        app:layout_textSizePercent="5%w"
+        android:gravity="center"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="查看车况"
+        android:textColor="#109EA2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/windows_color" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

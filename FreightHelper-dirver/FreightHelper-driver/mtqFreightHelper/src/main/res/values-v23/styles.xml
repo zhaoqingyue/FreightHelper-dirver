@@ -1,0 +1,47 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!-- Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色 -->
+
+        <!--<item name="android:windowLightStatusBar">true</item>-->
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <!--<item name="android:windowLightStatusBar">true</item>-->
+    
+      <style name="GuideAppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+          <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+          <!--<item name="android:windowLightStatusBar">true</item>-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!-- Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+          <item name="android:windowBackground">@drawable/welcome</item>
+    </style>
+ 
+
+</resources>

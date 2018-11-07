@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SaaS_AppAnalytics_Android_SDK_V4.0.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mtqFreightHelper/libs/SaaS_AppAnalytics_Android_SDK_V4.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

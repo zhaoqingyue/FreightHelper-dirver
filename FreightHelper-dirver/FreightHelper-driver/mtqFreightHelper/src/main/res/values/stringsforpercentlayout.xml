@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="textsize_title">8%sh</string>
+    <string name="textsize_normal">6%sh</string>
+    
+    <!-- <string name="textsize_edit">5%sw</string>
+    <string name="textsize_button">6%w</string>
+    
+    <string name="textsize_5w">5%sw</string> 
+    
+    
+    <string name="textsize_6">6%sh</string>
+    <string name="textsize_5">5%sh</string>
+    <string name="textsize_4">4%sh</string>
+    <string name="textsize_3">3%sh</string> 
+    <string name="textsize_2">2%sh</string>  -->
+    
+    <string name="layout_title_height">9%sh</string>
+    
+    <!-- 登录 -->
+    <string name="login_edit_widthPercent">70%w</string>
+    <string name="login_edit_heightPercent">14%h</string>
+    <string name="login_btn_widthPercent">70%w</string>
+    <string name="login_btn_heightPercent">14%h</string>
+    
+    <!-- 车况 -->
+    <string name="car_heightPercent">12%</string>
+    <string name="car_marginLeftPercent">7%w</string>
+    <string name="car_arrow_marginRightPercent">6%w</string>
+   
+    
+    <!-- 通讯录 -->
+    <string name="contacts_heightPercent">12%</string>
+    <string name="contacts_icon_heightPercent">60%h</string>
+    <string name="contacts_icon_widthPercent">60%h</string>
+    <string name="contacts_name_paddingLeftPercent">4%w</string>
+    
+    <string name="common_paddingLeftPercent">6%sw</string>
+    <string name="common_paddingRightPercent">6%sw</string>
+    <string name="common_marginTopPercent">3%w</string>
+    <string name="common_line_marginLeftPercent">5%w</string>
+    
+    <!-- 我的 -->
+    <string name="me_heightPercent">10%sh</string>
+    <string name="me_icon_heightPercent">60%h</string>
+    <string name="me_icon_widthPercent">60%h</string>
+    <string name="me_name_paddingLeftPercent">4%sw</string>
+    
+    <!-- 个人信息 -->
+    <string name="userinfo_avatar_heightPercent">11%h</string>
+    <string name="userinfo_heightPercent">9%h</string>
+	<string name="userinfo_arrow_marginRightPercent">3%w</string>
+	
+	<!-- 车辆信息 -->
+	<string name="carinfo_heightPercent">10%h</string>
+	
+	<string name="deviceinfo_heightPercent">10%h</string>
+	<string name="deviceinfo_marginLeftPercent">4%w</string>
+	<string name="deviceinfo_marginRightPercent">4%w</string>
+	
+	<!-- 绑定手机号 -->
+	<string name="bind_mobile_heightPercent">10%h</string>
+	<string name="bind_mobile_btn_widthPercent">82%w</string>
+	
+	<!-- 修改密码 -->
+	<string name="modify_pwd_heightPercent">10%h</string>
+	<string name="modify_pwd_btn_widthPercent">82%w</string>
+	
+	<!-- 修改性别 -->
+	<string name="set_sex_heightPercent">10%h</string>
+	
+	<!-- 设置密码 -->
+	<string name="set_pwd_heightPercent">10%h</string>
+	<string name="set_pwd_marginLeftPercent">7%w</string>
+	<string name="set_pwd_marginRightPercent">6%w</string>
+	<string name="set_pwd_line_marginLeftPercent">6%w</string>
+	<string name="set_pwd_btn_widthPercent">82%w</string>
+	
+	<!-- 消息 -->
+    <string name="msg_marginLeftPercent">4%w</string>
+	<string name="msg_marginRightPercent">4%w</string>
+	<string name="msg_paddingLeftPercent">4.6%sw</string>
+	<string name="msg_paddingRightPercent">4.6%sw</string>
+	
+	<!-- 消息筛选 -->
+	<string name="msg_filter_title_heightPercent">7%h</string>
+	<string name="msg_filter_heightPercent">8%h</string>
+	<string name="msg_filter_paddingLeftPercent">5%w</string>
+	<string name="msg_filter_paddingRightPercent">5%w</string>
+	<string name="msg_filter_marginLeftPercent">2%w</string>
+	<string name="msg_filter_marginTopPercent">1.5%h</string>
+	<string name="msg_filter_textSizePercent">4.2%w</string>
+	
+	
+	
+	<!-- 通知开关 -->
+	<string name="switch_title_heightPercent">6%h</string>
+	<string name="switch_heightPercent">10%h</string>
+	
+	<!-- 关于 -->
+	<string name="about_heightPercent">10%</string>
+    
+    <!-- 版本信息 -->
+    <string name="version_heightPercent">8.5%</string>
+	<string name="version_marginLeftPercent">7%w</string>
+	<string name="version_line_marginLeftPercent">6%w</string>
+    <string name="version_marginRightPercent">5%w</string>
+    
+    <string name="textsize_little_title">4%sw</string>
+	<string name="textsize_normal_use4_5w">4.5%sw</string>
+	<string name="textsize_normal_use5">5%w</string>
+	<string name="magin_tasklist_lr">5%w</string>
+	<string name="magin_tasklist_tb">5%w</string>
+	<string name="textsize_sc_4_5w">4.5%sw</string>
+	
+	<!-- 行程概览界面 -->
+	<string name="routeprew_title">4%sw</string>
+	
+	<string name="car_condition_data_part">10%sh</string>
+	
+	<!-- 行程详情 -->
+	<string name = "travel_detail_padding_left">5.7%sw</string>
+	<string name = "travel_detail_padding_top">3.3%sw</string>
+	<string name = "travel_detail_pop_padding_left">1.7%sw</string>
+	
+</resources>

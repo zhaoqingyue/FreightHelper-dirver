@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#00111111</color>
+    <color name="white">#ffffff</color>
+    <color name="halfwhite">#88ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black1">#999999</color>
+    <color name="black2">#eeeeee</color>
+    <color name="black3">#222222</color>
+    <color name="red">#FC2828</color>
+    <color name="greeny">#00CB0D</color>
+    <color name="greeny1">#069295</color>
+    <color name="blue">#499BF7</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="bar_color">#0b928c</color>
+    <color name="windows_color">#E8E8E8</color>
+     <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name="bg_app">#F1F1F1</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+    <color name="edittext_normal_color">#222222</color>
+    <color name="edittext_hint_color">#7A7E83</color>
+    <color name="text_gray">#aaffffff</color>
+    <color name="button_bg_disable_color">#109EA2</color>
+    <color name="button_bg_normal_color">#109EA2</color>
+    <color name="button_bg_pressed_color">#109EA2</color>
+    
+    <color name="button_text_disable_color">#ffffff</color>
+    <color name="button_text_normal_color">#ffffff</color>
+    <color name="button_text_pressed_color">#ffffff</color>
+    
+    <color name="vericode_disable_color">@color/transparent_appcolor</color>
+    <color name="vericode_normal_color">@color/app_color2</color>
+    <color name="vericode_pressed_color">@color/app_color2</color>
+    <color name="vericode">#80beba</color>
+    
+    <color name="text_normal_color">#666666</color>
+    
+    <color name="clear_edit_color">#888888</color>
+    
+    <!-- 扫描界面 -->
+    <color name="scanNum_color">#109e98</color>
+    <color name="scan_text_gray">#9a9a9a</color>
+    <color name="scan_progress_bg">#c2c2c2</color>
+    <color name="scan_progress">#0f9e98</color>
+    <color name="scan_edit">#c0c0c0</color>
+    <color name="scanrecord_list_title_bg">#e8e8e8</color>
+    <color name="scanrecord_list_title">#b8b8b8</color>
+    <color name="scanrecord_list_uploadresult">#7d7d7d</color>
+   
+    
+ 	<!-- 扫一扫 -->
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#CC000000</color>
+    <color name="viewfinder_mask">#B3000000</color>
+    <color name="scan_choose_press">#20000000</color>
+    <color name="viewfinder_frame">#2477ab</color>
+  
+     <color name="white_light">#88ffffff</color>
+    
+    <color name="gray">#f9f9f9</color>
+    <color name="app_color">#0b928c</color>
+    <color name="bar_text_color">#888888</color>
+	<color name="tasklist_text_color">#888888</color>
+    <color name="tasklist_transport_text_color">#52dbd4</color>
+	<color name="tasklist_stroke">#d7d7d7</color>
+    <color name="bar_text_color_select">#ef2c29</color>
+    <color name="black_text">#222222</color>
+     <color name="btn_gray">#9d9d9d</color>
+     <color name="btn_gray_press">#7d7d7d</color>
+     
+     <color name="btn_red">#e04343</color>
+     <color name="btn_red_press">#b42222</color>
+      <color name="text_sp_orange">#ff7800</color>
+      <color name="btn_appcolor_press">#0c837e</color>
+      <color name="text_normal_color2">#999999</color>
+      <color name="text_normal_color3">#c7c7c7</color>
+     <color name="text_hint">#c7c7c7</color>
+     
+     <color name="start_color">#61f1f6</color>
+     <color name="end_color">#aefc65</color>
+
+    <color name="app_color2">#ef2c29</color>
+
+    <!--<color name="app_color2">#ec0927</color> -->
+    <color name="btn_appcolor2_press">#A52A2A</color>
+    <color name="transparent_appcolor">#aaef2c29</color>
+
+    <color name="text_in_circle_color">#fc6337</color>
+    <color name="black_title">#444444</color>
+
+    <color name="upload_again_btn_color">#ec0c16</color>
+
+
+    <color name="bakcground_white">#f9f9f9</color>
+
+</resources>

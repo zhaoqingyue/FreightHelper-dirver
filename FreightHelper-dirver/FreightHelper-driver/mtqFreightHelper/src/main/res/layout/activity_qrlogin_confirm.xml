@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="60%w"
+            app:layout_paddingBottomPercent="5%w"
+            app:layout_paddingLeftPercent="10%w"
+            app:layout_paddingRightPercent="10%w"
+            app:layout_paddingTopPercent="12%w"
+            app:layout_widthPercent="100%w"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_sm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="TPND登录确认"
+            android:textColor="@color/black_text"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="1%w"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="你正在登录TPND设备"
+            android:textColor="@color/text_sp_orange"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="15%w"
+            app:layout_marginTopPercent="6%w"
+            app:layout_textSizePercent="5%w"
+            app:layout_widthPercent="80%w"
+            android:background="@drawable/selector_btn_emerald_green_bg"
+            android:text="确认登录"
+            android:textColor="@color/white" />
+
+        <TextView
+             android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="15%w"
+            app:layout_marginTopPercent="6%w"
+           app:layout_textSizePercent="5%w"
+            app:layout_widthPercent="80%w"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="取消登录"
+            android:textColor="@color/black_text"
+            android:visibility="visible" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

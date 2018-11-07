@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+        layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_heightPercent="80%w"
+        app:layout_paddingBottomPercent="10%w"
+        app:layout_paddingLeftPercent="5%w"
+        app:layout_paddingRightPercent="5%w"
+        app:layout_paddingTopPercent="5%w"
+        app:layout_marginTopPercent="10%w"
+        app:layout_widthPercent="70%w"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_downloadlink_qrcode"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_textSizePercent="4.5%w"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="扫描二维码，您的朋友也可以\n下载运巴巴APP"
+        android:textColor="@color/black_text"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_marginTopPercent="2%w"
+        app:layout_textSizePercent="4%w"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="别紧张，刷新页面试试"
+        android:textColor="@color/tasklist_text_color"
+        android:visibility="gone" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

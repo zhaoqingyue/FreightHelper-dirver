@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">运巴巴</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="main_bottom_task">任务</string>
+    <string name="main_bottom_car">车辆</string>
+    <string name="main_bottom_contacts">通讯录</string>
+    <string name="main_bottom_me">我的</string>
+     <string name="main_bottom_msg">消息</string>
+    <!-- 登录 -->
+    <string name="login_mobile_hint">请输入手机号</string>
+    <string name="login_vericode_hint">请输入验证码</string>
+    <string name="login_account_hint">请输入用户名</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_get_vericode">获取验证码</string>
+    <string name="login_login">登录</string>
+    <string name="login_use_account"><u>使用帐号登录</u></string>
+    <string name="login_use_mobile"><u>使用手机号登录</u></string>
+    <string name="login_lost_pwd">忘记密码?</string>
+    <string name="login_sended_vericode">%d秒后重发</string>
+    <string name="login_resend">重新发送</string>
+    
+    <!-- 车况 -->
+    <string name="car_condition">车况</string>
+    <string name="car_condition_detail">详情</string>
+    <string name="car_select">车辆选择</string>
+    <string name="car_check">查看任务执行时车况</string>
+    <string name="car_item_brand">车辆品牌:&#160;&#160;</string>
+    <string name="car_item_model">车辆型号:&#160;&#160;</string>
+    
+    <string name="car_no_data">暂无数据&#160;</string>
+    
+    <string name="car_condition_recent_route">最近一次行程</string>
+    <string name="car_condition_route">历史行程</string>
+    <string name="car_condition_car">车辆:&#160;&#160;%s</string>
+    <string name="car_condition_waybill">运单:&#160;&#160;%s</string>
+    <string name="car_condition_total_fuel">总油耗&#160;&#160;&#160;&#160;</string>
+    <string name="car_condition_remain_fuel">剩余油量&#160;&#160;&#160;&#160;</string>
+    <string name="car_condition_hundred_fuel">百公里油耗</string>
+    <string name="car_condition_idle_speed_fuel">怠速油耗&#160;&#160;</string>
+    <string name="car_condition_idle_speed_time">怠速时长&#160;&#160;</string>
+    <string name="car_condition_total_time">总时长</string>
+    <string name="car_condition_total_mileage">总里程</string>
+    <string name="car_condition_max_speed">最高车速</string>
+    <string name="car_condition_average_speed">平均车速</string>
+    <string name="car_condition_battery_voltage">电瓶电压&#160;&#160;&#160;&#160;</string>
+    <string name="car_condition_engine_speed">发动机转速&#160;&#160;</string>
+    <string name="car_condition_car_speed">车速&#160;&#160;&#160;&#160;</string>
+    <string name="car_condition_coolant_temperature">冷却液温度&#160;&#160;</string>
+    <string name="car_condition_moment_fuel">瞬时油耗&#160;&#160;&#160;&#160;</string>
+    
+    <string name="car_select_route">历史行程</string>
+    <string name="car_select_date">选择日期</string>
+    <string name="car_select_time">选择时间段</string>
+    
+    <string name="car_route_waybill">运单:&#160;</string>
+    <string name="car_route_total_mileage">总里程:&#160;</string>
+    <string name="car_route_total_time">总时长:&#160;</string>
+    
+    <string name="car_route_hundred_brakes">百公里急刹车</string>
+    <string name="car_route_hundred_turn">百公里急转弯</string>
+    <string name="car_route_hundred_overspeed">百公里超速</string>
+    <string name="car_route_hundred_bend_acceleration">百公里弯道加速</string>
+    <string name="car_route_hundred_fuel_chargingn">百公里急加油</string>
+    <string name="car_route_hundred_lane_change">百公里频繁变道</string>
+    
+    
+    <string name="week_sunday">日</string>  
+    <string name="week_monday">一</string>  
+    <string name="week_thesday">二</string>  
+    <string name="week_wednesday">三</string>  
+    <string name="week_thursday">四</string>  
+    <string name="week_friday">五</string>  
+    <string name="week_saturday">六</string> 
+    
+    <!-- 通讯录 -->
+    <string name="contacts_company">企业</string>
+    <string name="contacts_company_format">企业(%d)</string>
+    <string name="contacts_store">门店(0)</string>
+    <string name="contacts_delivery">配送中心(0)</string>
+    <string name="contacts_customer">客户信息(0)</string>
+    <string name="contacts_saerch_hint">搜索</string>
+    <string name="contacts_detail">详情</string>
+    <string name="contacts_detail_team">车队</string>
+    <string name="contacts_detail_phone">电话</string>
+    <string name="contacts_detail_warn">如要退出企业，请联系该企业的管理员。</string>
+    <string name="contacts_detail_call">拨号</string>
+    
+    <!-- 我的 -->
+    <string name="me_set_nickname">请设置昵称</string>
+    <string name="me_carinfo">车辆信息</string>
+    <string name="me_deviceinfo">设备信息</string>
+    <string name="me_about">关于</string>
+    
+    <!-- 个人信息 -->
+    <string name="userinfo_center">个人信息</string>
+    <string name="userinfo_avatar">头像</string>
+    <string name="userinfo_nickname">昵称</string>
+    <string name="userinfo_account">账号</string>
+    <string name="userinfo_area">区域</string>
+    <string name="userinfo_sex">性别</string>
+    <string name="userinfo_sex_male">男</string>
+    <string name="userinfo_sex_female">女</string>
+    <string name="userinfo_mobile">绑定手机</string>
+    <string name="userinfo_modify_pwd">修改密码</string>
+    <string name="userinfo_logout">退出登录</string>
+    
+    <!-- 车辆信息 -->
+    <string name="carinfo">车辆信息</string>
+    <string name="carinfo_num">车辆%d</string>
+    <string name="carinfo_plate">车牌号</string>
+    <string name="carinfo_type">车辆类型</string>
+    <string name="carinfo_brand">品牌</string>
+    <string name="carinfo_model">型号</string>
+    <string name="carinfo_device_name">设备类型名称</string>
+    <string name="carinfo_device_serial">设备序列号</string>
+    <string name="carinfo_device_expirate">设备SIM过期日期</string>
+    
+    <!-- 设备信息 -->
+    <string name="deviceinfo">设备信息</string>
+    <string name="deviceinfo_type">设备类型名称</string>
+    <string name="deviceinfo_serial">设备序列号</string>
+    <string name="deviceinfo_expirate">设备SIM过期时间</string>
+    
+    <!-- 关于 -->
+    <string name="about_version_name">Android V%s</string>
+    <string name="about_update">检查更新</string>
+    <string name="about_update_latest">已是最新版本</string>
+    <string name="about_version">版本信息</string>
+    <string name="about_agreement">运巴巴用户协议</string>
+    <string name="about_web">官方网站</string>
+    <string name="about_web_content">www.yunbaba88.com</string>
+    <string name="about_customer">客服电话</string>
+    <string name="about_customer_phone">400-991-3588</string>
+    <string name="agreement_protocol">服务协议</string>
+    
+    <string name="agreement">凯立德手机导航服务协议, 深圳市凯立德科技股份有限公司编制, 广东省地图出版社有限公司出版凯立德手机导航服务协议, 深圳市凯立德科技股份有限公司编制, 广东省地图出版社有限公司出版凯立德手机导航服务协议, 深圳市凯立德科技股份有限公司编制, 广东省地图出版社有限公司出版</string>
+    
+    <!-- 版本信息 -->
+    <string name="version_name">版本号</string>
+    <string name="version_trial">审图号</string>
+    <string name="version_isbn">ISBN</string>
+	<string name="version_drawup">深圳市凯立德科技股份有限公司编制</string>
+    <string name="version_publish">广东省地图出版社有限公司出版</string>
+    <string name="version_web">官方网站</string>
+    <string name="version_platform">马蹄圈物流云平台</string>
+    <string name="version_customer_phone">客服电话</string>
+   
+    <!-- 选择地区 -->
+    <string name="area_title">选择地区</string>
+    <string name="area_cur_area">当前区域</string>
+    <string name="area_select">区域选择</string>
+    <string name="area_location">正在定位</string>
+    <string name="area_unlocation">无法获取当前位置</string>
+    
+    <!-- 修改性别 -->
+    <string name="modify_sex">修改性别</string>
+    <string name="modify_sex_male">男</string>
+    <string name="modify_sex_female">女</string>
+    
+    <!-- 绑定手机号 -->
+    <string name="bind_mobile">绑定手机</string>
+    <string name="bind_mobile_account">账号</string>
+    <string name="bind_mobile_mobile">手机号码</string>
+    <string name="bind_mobile_mobile_hint">请填写需要绑定的手机号</string>
+    <string name="bind_mobile_vericode">验证码</string>
+    <string name="bind_mobile_vericode_hint">请输入</string>
+    <string name="bind_mobile_get_vericode">获取验证码</string>
+    <string name="bind_mobile_confirm">确认</string>
+    <string name="bind_mobile_importance">*您的账号十分重要，绑定手机号将&#160;: </string>
+    <string name="bind_mobile_importance_one">1.&#160;提高账号安全;</string>
+    <string name="bind_mobile_importance_two">2.&#160;使用手机号登录;</string>
+    <string name="bind_mobile_importance_three">3.&#160;让货主更方便找到您;</string>
+    <string name="bind_mobile_importance_four">4.&#160;支持强大的企业功能;</string>
+    
+    <!-- 修改密码 -->
+    <string name="modify_pwd">修改密码</string>
+    <string name="modify_pwd_original_pwd">原始密码</string>
+    <string name="modify_pwd_original_pwd_hint">填写原始密码</string>
+    <string name="modify_pwd_new_pwd">新密码</string>
+    <string name="modify_pwd_new_pwd_hint">填写新密码</string>
+    <string name="modify_pwd_confirm_pwd">确认密码</string>
+    <string name="modify_pwd_confirm_pwd_hint">再次确认新密码</string>
+    <string name="modify_pwd_confirm">确认修改</string>
+    
+    <!-- 设置密码 -->
+    <string name="set_pwd_set_new_pwd">设置登录密码</string>
+    <string name="set_pwd_retrieve_pwd">重置密码</string>
+    <string name="set_pwd_mobile">手机号码</string>
+    <string name="set_pwd_mobile_hint">请填写需要绑定的手机号</string>
+    <string name="set_pwd_vericode">验证码</string>
+    <string name="set_pwd_vericode_hint">请输入</string>
+    <string name="set_pwd_get_vericode">获取验证码</string>
+    <string name="set_pwd_next">下一步</string>
+    <string name="set_pwd_new_pwd">新密码</string>
+    <string name="set_pwd_new_pwd_hint">填写新密码</string>
+    <string name="set_pwd_confirm_pwd">确认密码</string>
+    <string name="set_pwd_confirm_pwd_hint">再次确认新密码</string>
+    <string name="set_pwd_confirm">确认</string>
+    
+    <!-- 消息 -->
+    <string name="msg">消息</string>
+    <string name="msg_business_msg">企业消息</string>
+    <string name="msg_alarm_msg">报警消息</string>
+    <string name="msg_filter">筛选</string>
+    <string name="msg_switch">通知设置</string>
+    
+    <!-- 企业消息 -->
+    <string name="msg_business_join">加入车队</string>
+    <string name="msg_business_join_corpname">邀请您加入%s，确认通过后您将成为该车队的成员。</string>
+    <string name="msg_business_join_notice">提示：确认加入将表示您自愿接受该企业的管理，并接受来自该企业的消息推送(包括但不限于运货单、路线、限行、提醒等消息。)</string>
+    <string name="msg_business_join_refuse">拒绝</string>
+    <string name="msg_business_join_agree">同意</string>
+    <string name="msg_business_quit">退出车队</string>
+    <string name="msg_business_quit_groupname">您已退出%s。</string>
+    <string name="msg_business_quit_corpname">(由%s解除关系，如有疑问请联系企业管理员)</string>
+    <string name="msg_business_schedule_kcode">调度消息</string>
+    <string name="msg_business_schedule_kcode_navi">导航</string>
+    <string name="msg_business_schedule_general">调度消息</string>
+    <string name="msg_business_task_remind">任务消息</string>
+    <string name="msg_business_task_remind_taskId">运货单&#160;(%s)&#160;</string>
+    <string name="msg_business_task_general">任务消息</string>
+    <string name="msg_business_task_general_check_detail">查看详情&#160;&#62;</string>
+    <string name="msg_business_task_general_hint_task_id">任务单号：</string>
+    <string name="msg_business_task_general_hint_vehicle">送货车辆：</string>
+    <string name="msg_business_task_general_delivery_points">门店数量：</string>
+
+    <string name="msg_business_task_general_point">收到一个新任务&#160;(共%s个运货单)&#160;，请在任务页面\"等待运输\"列表中查看</string>
+    <string name="msg_business_task_general_point_new">收到一个新任务,请在任务页面\"等待运输\"列表中查看</string>
+    
+    <string name="msg_business_order_cancel">运货单&#160;(%s)&#160;已被撤回。&#160;(如有疑问，请联系企业管理员)</string>
+    <string name="msg_business_task_cancel">您的%s发车的任务行程已取消。&#160;(如有疑问，请联系企业管理员)</string>
+    <string name="msg_alarm_brand">车辆%s</string>
+    
+    <!-- 消息通知开关 -->
+    <string name="switch_task">任务</string>
+    <string name="switch_waybill_timeout_alarm">运单超时报警</string>
+    <string name="switch_waybill_timeout_remind">运单超时提醒</string>
+    <string name="switch_waybill_expired_alarm">运单过期报警</string>
+    <string name="switch_waybill_expired_remind">运单过期提醒</string>
+    <string name="switch_car_safety">车辆安全</string>
+    <string name="switch_safety_collision">碰撞提醒</string>
+    <string name="switch_safety_rollover">翻车提醒</string>
+    <string name="switch_safety_speeding">超速行驶提醒</string>
+    <string name="switch_safety_fatigue">疲劳驾驶提醒</string>
+    <string name="switch_safety_vibration">异常震动提醒</string>
+    <string name="switch_car_abnormal">车辆异常</string>
+    <string name="switch_abnormal_door">车门状态异常提醒</string>
+    <string name="switch_abnormal_handbrake">胎压和手刹异常提醒</string>
+    <string name="switch_abnormal_water">水温异常提醒</string>
+    <string name="switch_abnormal_rotating_speed">转速异常提醒</string>
+    <string name="switch_abnormal_battery_voltage">电瓶电压异常提醒</string>
+    <string name="switch_abnormal_vehicle_failure">车辆故障提醒</string>
+    <string name="switch_abnormal_oil_spill">漏油提醒</string>
+    <string name="switch_abnormal_towing">拖吊报警</string>
+    <string name="switch_device_abnormal">设备异常</string>
+    <string name="switch_abnormal_poweroff">断电提醒</string>
+    <string name="switch_abnormal_terminal">终端异常</string>
+    <string name="switch_abnormal_sim">设备OBD终端的SIM卡</string>
+    
+    <string name="filter_business_msg">筛选企业消息</string>
+    <string name="filter_alarm_msg">筛选报警消息</string>
+    <string name="filter_business">企业</string>
+    <string name="filter_business_join">加入/退出车队</string>
+    <string name="filter_business_schedule">调度消息</string>
+    <string name="filter_business_task">新任务消息</string>
+   
+    <string name="filter_task">任务</string>
+    <string name="filter_claer">重置</string>
+    <string name="filter_finish">完成</string>
+    
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_join">加入</string>
+    <string name="dialog_continue_to_join">继续加入</string>
+    <string name="dialog_call">拨号</string>
+    <string name="dialog_got_it">知道了</string>
+    <string name="dialog_exit">退出账号</string>
+    <string name="dialog_exit_content">确定要退出当前账号？</string>
+    <string name="dialog_confirm_to_refuse_to_join">确认不加入车队？</string>
+    <string name="dialog_nick_title">编辑昵称</string>
+    <string name="dialog_nick_hint">请输入昵称</string>
+    
+    <string name="dialog_new_version">有最新版本现在更新？</string>
+    <string name="dialog_lastest_version">最新版本: V%s</string>
+    <string name="dialog_no_need">不用了</string>
+    <string name="dialog_update">更新</string>
+    <string name="maximum_number_reached">已达最大字数</string>
+ 
+    
+    <!-- 帐号提示 -->
+    <string name="account_account_empty">帐号不能为空</string>
+	<string name="account_pasword_empty">密码不能为空</string>
+	<string name="account_account_error">请输入正确的帐号</string>
+	<string name="account_password_error">请输入正确的密码</string>
+	<string name="account_email_error">请输入正确的邮箱</string>
+	<string name="account_login_mobile_err">请输入有效的手机号</string>
+	<string name="account_retrive_pwd_mobvericode">请输入手机号或验证码</string>
+	<string name="account_input_mobile_err">您输入的手机号码不正确</string>
+	<string name="account_get_vericode_success">验证码将以短信形式发送到您的手机</string>
+	<string name="account_get_vericode_failed">获取验证码失败</string>
+	<string name="account_vericode_repeat_get">短时间内不能重复发送验证码</string>
+	<string name="account_vericode_timer_more">该手机号重复获取验证码次数过多，请明天再试</string>
+	<string name="account_retrive_pwd_mobile_unbind">该手机尚未绑定，请确认输入是否正确</string>
+	<string name="account_reset_pwd_new_err">请输入6-14位新密码</string>
+	<string name="account_reset_pwd_new_specail">新密码不能含有特殊字符</string>
+	<string name="account_reset_pwd_new_lessonenum">新密码至少包含1个数字和1个字母</string>
+	<string name="account_reset_pwd_success">重置密码成功, 请使用新密码登录</string>
+    <string name="account_reset_pwd_failed">重置密码失败</string>
+    <string name="account_vericode_has_invalid">验证码已失效,请重新获取</string>
+    <string name="account_vericode_err">短信验证码错误,请重试</string>
+    <string name="account_vericode_has_err">验证码有误</string>
+    <string name="account_vericode_has_used">验证码已校验</string>
+    <string name="account_login_failed">登录失败</string>
+    <string name="account_login_user_err">用户名不存在</string>
+    <string name="account_login_userpwd_err">密码错误</string>
+    <string name="account_logout">退出登录</string>
+    <string name="account_logout_failed">登出失败，请检查网络</string>
+    <string name="account_locate_failed">无法获取你的位置信息。</string>
+    <string name="account_invalid">您的帐号已在其它终端上登录，您被迫下线。</string> 
+    
+    <string name="userinfo_get_failed">获取用户信息失败</string>
+    <string name="userinfo_useralis_lenth">"昵称不能少于2个字符"</string>
+    <string name="userinfo_useralis_specchar">"昵称不能输入特殊字符"</string>
+	<string name="userinfo_revise_pwd_old_not_empty">"旧密码不能为空"</string>
+	<string name="userinfo_revise_pwd_new_not_empty"> "新密码不能为空"</string>
+	<string name="userinfo_revise_pwd_ensure_new"> "请确认新密码"</string>
+	<string name="userinfo_revise_pwd_new_old_unsame">"密码输入不一致"</string>
+    <string name="userinfo_revise_pwd_same">"新密码不能与旧密码相同"</string>
+    <string name="userinfo_revise_pwd_old_err">"旧密码不正确"</string>
+    <string name="userinfo_revise_pwd_success">"修改密码成功"</string>
+    <string name="userinfo_revise_pwd_failed">"密码修改失败"</string>
+    <string name="userinfo_revise_mobile_same">"新手机号不能与原手机号相同"</string>
+    <string name="userinfo_revise_mobile_success">"修改手机号成功"</string>
+    <string name="userinfo_mobile_modify_title">"修改绑定手机"</string>
+    <string name="userinfo_mobile_has_binded"> "此号码已绑定了其他凯立德帐号，请重新填写，或使用该号码登录"</string>
+    <string name="userinfo_revise_mobile_failed">"修改失败,请稍后再试"</string>
+    <string name="userinfo_set_failed">"操作失败，请检查网络！"</string>
+    
+    
+    <string name="common_network_abnormal">网络通信出现问题，请稍后再试。</string>
+    <string name="common_network_data_update">更新中，请稍后...</string>
+    <string name="common_network_version_update">正在检查更新请稍后...</string>
+    <!--扫描二维码 -->
+    <string name="scan_network_error">当前网络不可用\n请检查网络设置</string>
+    <string name="scan_network_error_tips">网络异常，无法扫描</string>
+    <string name="scan_tips">将二维码放入框内，即可自动扫描</string>
+    <string name="scan_no_result">没有发现二维码</string>
+    <string name="scan_read_result">正在读取结果…</string>
+    <string name="scan_can_not_open_camera">摄像头启动失败,请授权相机权限</string>
+    
+    
+     <!-- 扫一扫登录验证 -->
+    <string name="scan_rescan_QR_code">重新扫描二维码</string>
+    <string name="scan_result_loging">登录中…</string>
+    <string name="scan_result_verify_success">登录成功</string>
+    <string name="scan_result_verify_failure">登录失败</string>
+    <string name="scan_result_invalid">登录失效</string>
+    <string name="scan_result_relogined">帐号已登录</string>
+    <string name="scan_result_timeout">登录超时</string>
+    <string name="block_canary_display_activity_label">Blocks</string>
+</resources>

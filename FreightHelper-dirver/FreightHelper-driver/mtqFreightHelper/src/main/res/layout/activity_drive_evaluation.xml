@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bakcground_white">
+
+    <include
+        android:id="@+id/travel_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height"
+        layout="@layout/layout_title" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_travel_detail_start_dest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/travel_detail_title"
+        app:layout_heightPercent="12.4%sh"
+        app:layout_paddingLeftPercent="@string/travel_detail_padding_left"
+        app:layout_paddingRightPercent="@string/travel_detail_padding_left"
+        app:layout_paddingTopPercent="2%sh"
+        android:background="#333333" >
+
+        <TextView
+            android:id="@+id/tv_travel_detail_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_textSizePercent="4.72%sw"
+            android:text="起点"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:layout_textSizePercent="4.72%sw"
+            android:gravity="right"
+            android:text="终点"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_travel_detail_start"
+            app:layout_textSizePercent="4.3%sw"
+            android:text="2017/3/26 12:36"
+            android:textColor="@color/clear_edit_color" />
+
+        <TextView
+            android:id="@+id/tv_travel_detail_dest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_travel_detail_dest"
+            app:layout_textSizePercent="4.3%sw"
+            android:gravity="right"
+            android:text="2017/3/26 18:36"
+            android:textColor="@color/clear_edit_color" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_travel_detail_start_time"
+            app:layout_heightPercent="1.9%sh"
+            app:layout_marginTopPercent="0.5%sh"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_start_dest" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_drive_evaluation_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_travel_detail_start_dest"
+        android:background="@color/white" >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_hundred_part2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="14.2%sh"
+            android:orientation="horizontal" >
+
+            <!-- 百公里急转弯 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_turn"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_turn" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_turn_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/tv_drive_hundred_turn"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_turn_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_turn_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_turn_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_drive_hundred_turn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_turn_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_turn" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_gradient_line_left" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_gradient_line_bottom" />
+
+            <!-- 百公里超速 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_overspeed"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_overspeed" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_overspeed_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_drive_hundred_overspeed"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_overspeed_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_overspeed_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_overspeed_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_overspeed_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_overspeed" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/windows_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_gradient_line_bottom" />
+
+            <!-- 百公里弯道加速 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_bend_acceleration"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_bend_acceleration" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_bend_acceleration_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_drive_hundred_bend_acceleration"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_bend_acceleration_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_bend_acceleration_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_bend_acceleration_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_bend_acceleration_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_bend_acceleration" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_gradient_line_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_hundred_part1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/ll_hundred_part2"
+            app:layout_heightPercent="15.5%sh"
+            android:orientation="horizontal" >
+
+            <!-- 百公里急刹车 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_brakes"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_brakes" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_brakes_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_drive_hundred_brakes"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_brakes_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_brakes_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_brakes_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_brakes_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_brakes" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_gradient_line_left" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_gradient_line_top" />
+
+            <!-- 百公里急加油 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_fuel_chargingn"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_fuel_chargingn" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_fuel_chargingn_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_drive_hundred_fuel_chargingn"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_fuel_chargingn_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_fuel_chargingn_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_fuel_chargingn_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_fuel_chargingn_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_fuel_chargingn" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/windows_color" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_gradient_line_top" />
+
+            <!-- 百公里频繁变道 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_drive_hundred_lane_change"
+                    style="@style/drive_evaluation_part2_text"
+                    android:text="@string/car_route_hundred_lane_change" />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_drive_hundred_lane_change_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_drive_hundred_lane_change"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="4%sh"
+                    app:layout_paddingBottomPercent="0.2%sh" >
+
+                    <TextView
+                        android:id="@+id/tv_drive_hundred_lane_change_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        app:layout_textSizePercent="2.7%sh"
+                        android:text="--"
+                        android:textColor="@color/black3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_drive_hundred_lane_change_value"
+                        android:layout_toRightOf="@+id/tv_drive_hundred_lane_change_value"
+                        app:layout_textSizePercent="3.5%sw"
+                        android:text=" 次"
+                        android:textColor="@color/black" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_above="@+id/rl_drive_hundred_lane_change_value"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="6.1%sw"
+                    app:layout_widthPercent="6.1%sw"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_lane_change" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_gradient_line_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- 测评总结 -->
+
+        <TextView
+            android:id="@+id/tv_drive_evaluation_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_hundred_part1"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="5.5%sh"
+            app:layout_textSizePercent="4.5%sw"
+            android:text="本次行程驾驶测评良好,请继续保持！"
+            android:textColor="@color/black" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_drive_evaluation_comment"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="5.5%sh" >
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_shape" />
+
+            <com.yunbaba.freighthelper.ui.activity.car.ColorArcBar
+                android:id="@+id/tv_drive_evaluation_comment_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

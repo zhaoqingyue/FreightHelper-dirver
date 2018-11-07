@@ -1,0 +1,122 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From CldOlsHuoyun:
+* api.rar
+* ic_launcher-web.png
+* newfile.ucd
+* proguard-project.txt
+* 货运业务调用时序图.sqd
+From MTQFreightHelper:
+* .factorypath
+* .gitignore
+* codetemplates.xml
+* ic_launcher-web.png
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+From fragmentation:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:23.4.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:23.4.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In CldOlsHuoyun:
+* AndroidManifest.xml => cldOlsHuoyun\src\main\AndroidManifest.xml
+* assets\ => cldOlsHuoyun\src\main\assets\
+* libs\cldnavimapsdk_v2.1.7.jar => cldOlsHuoyun\libs\cldnavimapsdk_v2.1.7.jar
+* libs\lite-orm-1.9.1.jar => cldOlsHuoyun\libs\lite-orm-1.9.1.jar
+* libs\org.apache.http.legacy.jar => cldOlsHuoyun\libs\org.apache.http.legacy.jar
+* lint.xml => cldOlsHuoyun\lint.xml
+* res\ => cldOlsHuoyun\src\main\res\
+* src\ => cldOlsHuoyun\src\main\java\
+In fragmentation:
+* AndroidManifest.xml => fragmentation\src\main\AndroidManifest.xml
+* assets\ => fragmentation\src\main\assets
+* res\ => fragmentation\src\main\res\
+* src\ => fragmentation\src\main\java\
+In MTQFreightHelper:
+* .apt_generated\ => mTQFreightHelper\src\main\java\
+* AndroidManifest.xml => mTQFreightHelper\src\main\AndroidManifest.xml
+* assets\ => mTQFreightHelper\src\main\assets\
+* libs\android-support-percent.jar => mTQFreightHelper\libs\android-support-percent.jar
+* libs\armeabi\libcldbase.so => mTQFreightHelper\src\main\jniLibs\armeabi\libcldbase.so
+* libs\armeabi\libhmi_facade_android.so => mTQFreightHelper\src\main\jniLibs\armeabi\libhmi_facade_android.so
+* libs\armeabi\libhmi_opengl_android.so => mTQFreightHelper\src\main\jniLibs\armeabi\libhmi_opengl_android.so
+* libs\armeabi\libhmi_package_android.so => mTQFreightHelper\src\main\jniLibs\armeabi\libhmi_package_android.so
+* libs\armeabi\libkclan_jni.so => mTQFreightHelper\src\main\jniLibs\armeabi\libkclan_jni.so
+* libs\armeabi\libnavicm_misc_v1.0.so => mTQFreightHelper\src\main\jniLibs\armeabi\libnavicm_misc_v1.0.so
+* libs\armeabi\libnavione.so => mTQFreightHelper\src\main\jniLibs\armeabi\libnavione.so
+* libs\bugly_crash_release.jar => mTQFreightHelper\libs\bugly_crash_release.jar
+* libs\butterknife-7.0.1.jar => mTQFreightHelper\libs\butterknife-7.0.1.jar
+* libs\eventbus_3.0.0.jar => mTQFreightHelper\libs\eventbus_3.0.0.jar
+* libs\picasso-2.5.2.jar => mTQFreightHelper\libs\picasso-2.5.2.jar
+* libs\region_v1.0.0.jar => mTQFreightHelper\libs\region_v1.0.0.jar
+* libs\SaaS_AppAnalytics_Android_SDK_V4.0.8.jar => mTQFreightHelper\libs\SaaS_AppAnalytics_Android_SDK_V4.0.8.jar
+* libs\volley.jar => mTQFreightHelper\libs\volley.jar
+* libs\zxing-core-3.2.1.jar => mTQFreightHelper\libs\zxing-core-3.2.1.jar
+* lint.xml => mTQFreightHelper\lint.xml
+* proguard-project.txt => mTQFreightHelper\proguard-project.txt
+* res\ => mTQFreightHelper\src\main\res\
+* src\ => mTQFreightHelper\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

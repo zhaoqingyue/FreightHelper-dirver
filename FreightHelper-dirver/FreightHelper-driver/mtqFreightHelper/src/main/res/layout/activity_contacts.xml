@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%"
+            app:layout_marginBottomPercent="2%"
+            app:layout_paddingLeftPercent="3%"
+            app:layout_paddingRightPercent="3%"
+            app:layout_marginTopPercent="2%"
+            android:background="@drawable/shape_clear_edittext_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="60%h"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginRightPercent="5%"
+                app:layout_widthPercent="60%h"
+                android:background="#00ffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/contacts_search" />
+
+            <com.yunbaba.freighthelper.ui.customview.ClearEditText
+                android:id="@+id/contacts_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="5%w"
+                android:background="@color/white"
+                android:hint="@string/contacts_saerch_hint"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/clear_edit_color"
+                android:textColorHint="@color/clear_edit_color" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/contacts_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/windows_color"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/contacts_selected"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                app:layout_heightPercent="12%w"
+                app:layout_textSizePercent="5%"
+                app:layout_widthPercent="12%w"
+                android:background="@drawable/shape_sidebar_selected"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <com.yunbaba.freighthelper.ui.customview.SideBar
+                android:id="@+id/contacts_sidrbar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="right|center"
+                app:layout_heightPercent="100%h"
+                app:layout_widthPercent="8%w" />
+        </com.zhy.android.percent.support.PercentFrameLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

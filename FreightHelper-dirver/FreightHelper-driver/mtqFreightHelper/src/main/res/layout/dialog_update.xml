@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="16%"
+        app:layout_widthPercent="80%"
+        android:background="@drawable/shape_prompt_dialog_bg" >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/update_percent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="60%"
+            app:layout_paddingLeftPercent="5%"
+            app:layout_paddingRightPercent="5%"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="7%w"
+                android:text="正在更新"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/update_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="7%w"
+                android:text="(0%)"
+                android:textColor="@color/app_color2" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ProgressBar
+            android:id="@+id/update_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/update_percent_layout"
+            app:layout_heightPercent="18%"
+            app:layout_marginLeftPercent="10%"
+            app:layout_marginRightPercent="10%"
+            android:progress="0"
+            android:progressDrawable="@drawable/layer_update_progress" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MTQFreightHelper.iml" filepath="$PROJECT_DIR$/MTQFreightHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NiceSpinner/NiceSpinner.iml" filepath="$PROJECT_DIR$/NiceSpinner/NiceSpinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cldOlsHuoyun/cldOlsHuoyun.iml" filepath="$PROJECT_DIR$/cldOlsHuoyun/cldOlsHuoyun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mtqFreightHelper/mtqFreightHelper.iml" filepath="$PROJECT_DIR$/mtqFreightHelper/mtqFreightHelper.iml" />
+    </modules>
+  </component>
+</project>

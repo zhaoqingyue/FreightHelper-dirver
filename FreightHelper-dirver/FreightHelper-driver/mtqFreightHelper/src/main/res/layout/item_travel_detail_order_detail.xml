@@ -1,0 +1,169 @@
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="12%sw"
+        android:background="#e8e8e8" >
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginLeftPercent="4%sw"
+                app:layout_textSizePercent="4.5%w"
+                android:text="单号:"
+                android:textColor="#7d7d7d" />
+
+            <TextView
+                android:id="@+id/order_detail_item_waybill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="4.5%w"
+                android:text="160230256458"
+                android:textColor="#222222" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vl1"
+            app:layout_marginLeftPercent="4.8%sw"
+            app:layout_marginTopPercent="6.2%sw"
+            android:layout_alignParentTop="true"
+            app:layout_marginBottomPercent="6.2%sw"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="2.5%sw"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_address_link" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/vl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="12.68%sw"
+            app:layout_marginTopPercent="3.8%sw"
+            android:layout_alignParentLeft="true"
+            app:layout_paddingBottomPercent="3.8%sw"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/order_detail_item_send_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="4.5%sw"
+                android:text="深圳市航空物流园"
+                android:textColor="#222222" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="3.8%sw"
+                    android:text="发件人:"
+                    android:textColor="#7d7d7d" />
+
+                <TextView
+                    android:id="@+id/order_detail_item_send_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="3.8%sw"
+                    android:text="周武"
+                    android:textColor="#222222" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    app:layout_heightPercent="3.8%sw"
+                    app:layout_widthPercent="3.8%sw"
+                    android:src="@drawable/icon_phonecall" />
+
+                <TextView
+                    android:id="@+id/order_detail_item_send_man_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    app:layout_marginRightPercent="4%sw"
+                    app:layout_textSizePercent="3.8%sw"
+                    android:text="18688996633"
+                    android:textColor="#069295" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#d9d9d9" />
+
+            <TextView
+                android:id="@+id/order_detail_item_rec_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_textSizePercent="4.5%sw"
+                android:text="深圳市航空物流园"
+                android:textColor="#222222" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="3.8%sw"
+                    android:text="发件人:"
+                    android:textColor="#7d7d7d" />
+
+                <TextView
+                    android:id="@+id/order_detail_item_rec_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="3.8%sw"
+                    android:text="周武"
+                    android:textColor="#222222" />
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    app:layout_heightPercent="3.8%sw"
+                    app:layout_widthPercent="3.8%sw"
+                    android:src="@drawable/icon_phonecall" />
+
+                <TextView
+                    android:id="@+id/order_detail_item_rec_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    app:layout_textSizePercent="3.8%sw"
+                    app:layout_marginRightPercent="4%sw"
+                    
+                    
+                    android:text="18688996633"
+                    android:textColor="#069295" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+       
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

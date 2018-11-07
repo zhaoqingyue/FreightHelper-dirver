@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c2c2c2"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="6%h"
+            app:layout_paddingLeftPercent="6%w"
+            app:layout_paddingTopPercent="1.2%h"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center_vertical"
+            android:text="@string/area_cur_area"
+            android:textColor="@color/text_normal_color" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%h"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_marginRightPercent="3%w"
+            app:layout_paddingLeftPercent="4%w"
+            app:layout_paddingRightPercent="3%w"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/area_cur_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/area_line"
+                app:layout_marginRightPercent="3%w"
+                app:layout_textSizePercent="5%w"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/area_line"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/area_right_layout"
+                app:layout_heightPercent="60%h"
+                app:layout_marginRightPercent="3%w"
+                android:background="@color/windows_color" />
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/area_right_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h" >
+
+                <ImageView
+                    android:id="@+id/area_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/area_location" />
+
+                <ImageView
+                    android:id="@+id/area_locating"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_progress_load"
+                    android:visibility="gone" />
+            </com.zhy.android.percent.support.PercentFrameLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="6%h"
+            app:layout_paddingLeftPercent="6%w"
+            app:layout_textSizePercent="4.5%w"
+            android:gravity="center_vertical"
+            android:text="@string/area_select"
+            android:textColor="@color/text_normal_color" />
+
+        <ExpandableListView
+            android:id="@+id/area_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_marginRightPercent="3%w"
+            android:background="@color/white"
+            android:childDivider="#ececec"
+            android:divider="@color/windows_color"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

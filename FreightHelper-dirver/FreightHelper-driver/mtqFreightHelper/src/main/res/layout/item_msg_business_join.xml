@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/business_msg_join_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/business_msg_join_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_textSizePercent="4%w"
+            android:background="@drawable/shape_msg_time_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="2017-03-23 09:53"
+            android:textColor="@color/white" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_marginLeftPercent="@string/msg_marginLeftPercent"
+        app:layout_marginRightPercent="@string/msg_marginRightPercent"
+        android:background="@drawable/shape_msg_content_bg" >
+
+        <ImageView
+            android:id="@+id/business_msg_join_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_heightPercent="7%w"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_widthPercent="12%w"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/msg_business_join" />
+
+        <TextView
+            android:id="@+id/business_msg_join_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/business_msg_join_item_icon"
+            android:layout_alignTop="@+id/business_msg_join_item_icon"
+            android:layout_toRightOf="@+id/business_msg_join_item_icon"
+            app:layout_textSizePercent="5.5%w"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/msg_business_join"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/business_msg_join_item_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/business_msg_join_item_icon"
+            android:background="@color/black2" />
+
+        <TextView
+            android:id="@+id/business_msg_join_item_corpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_join_item_line1"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/msg_business_join_corpname"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/business_msg_join_item_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/business_msg_join_item_corpname"
+            app:layout_paddingLeftPercent="@string/msg_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/msg_paddingRightPercent"
+            app:layout_textSizePercent="4.5%w"
+            android:paddingBottom="20dp"
+            android:text="@string/msg_business_join_notice"
+            android:textColor="@color/black1" />
+
+        <View
+            android:id="@+id/business_msg_join_item_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/business_msg_join_item_notice"
+            android:background="@color/black2" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/business_msg_join_item_line2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/business_msg_join_item_refuse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_textSizePercent="5%w"
+                android:background="@drawable/selector_bth_white_bg"
+                android:gravity="center"
+                android:text="@string/msg_business_join_refuse"
+                android:textColor="#e04343" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/business_msg_join_item_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_textSizePercent="5.5%w"
+                android:background="@drawable/selector_bth_white_bg"
+                android:gravity="center"
+                android:text="@string/msg_business_join_agree"
+                android:textColor="#0f9e98" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:id="@+id/business_msg_join_item_result"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/business_msg_join_item_line2"
+            app:layout_textSizePercent="5%w"
+            android:gravity="center"
+            android:text="已同意"
+            android:textColor="#A4A41D"
+            android:visibility="gone" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

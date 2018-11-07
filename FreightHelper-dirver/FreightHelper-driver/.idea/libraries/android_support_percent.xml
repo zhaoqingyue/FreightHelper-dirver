@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-support-percent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mtqFreightHelper/libs/android-support-percent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

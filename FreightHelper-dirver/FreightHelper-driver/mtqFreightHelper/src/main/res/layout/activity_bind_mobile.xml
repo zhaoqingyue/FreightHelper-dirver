@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <!-- 账号 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/bind_mobile_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/bind_mobile_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/bind_mobile_account_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_account"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/bind_mobile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bind_mobile_account_pre"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="4.5%w"
+                android:gravity="right|center_vertical"
+                android:text=""
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 手机号码 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/bind_mobile_mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/bind_mobile_heightPercent"
+            app:layout_marginTopPercent="@string/common_marginTopPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/bind_mobile_edit_mobile_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_mobile"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/bind_mobile_edit_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bind_mobile_edit_mobile_pre"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="4.5%w"
+                android:textCursorDrawable="@drawable/shape_edit_cursor"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/bind_mobile_mobile_hint"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text=""
+                android:maxLength="11"
+                android:textColor="@color/edittext_normal_color"
+                android:textColorHint="@color/edittext_hint_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                android:background="@color/windows_color" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 验证码 -->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/bind_mobile_vericode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/bind_mobile_heightPercent"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/bind_mobile_edit_vericode_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_vericode"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/bind_mobile_edit_vericode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/bind_mobile_btn_vericode"
+                android:layout_toRightOf="@+id/bind_mobile_edit_vericode_pre"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginRightPercent="5%w"
+                app:layout_textSizePercent="4.5%w"
+                android:textCursorDrawable="@drawable/shape_edit_cursor"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="6"
+                android:textColor="@color/edittext_normal_color"
+                android:textColorHint="@color/edittext_hint_color" />
+
+            <TextView
+                android:id="@+id/bind_mobile_btn_vericode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.5%w"
+                android:enabled="false"
+                android:text="@string/bind_mobile_get_vericode"
+                android:textColor="@drawable/selector_vericode_text" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- 确认 -->
+
+        <Button
+            android:id="@+id/bind_mobile_btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="@string/bind_mobile_heightPercent"
+            app:layout_marginTopPercent="6%h"
+            app:layout_textSizePercent="5%w"
+            app:layout_widthPercent="@string/bind_mobile_btn_widthPercent"
+            android:background="@drawable/selector_bth_red_bg"
+            android:textColor="@drawable/selector_bth_red_text"
+            android:enabled="false"
+            android:text="@string/bind_mobile_confirm"
+            />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_marginTopPercent="8%h"
+            app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+            app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_importance"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_importance_one"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_importance_two"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_importance_three"
+                android:textColor="@color/text_normal_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:layout_textSizePercent="4.5%w"
+                android:text="@string/bind_mobile_importance_four"
+                android:textColor="@color/text_normal_color" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

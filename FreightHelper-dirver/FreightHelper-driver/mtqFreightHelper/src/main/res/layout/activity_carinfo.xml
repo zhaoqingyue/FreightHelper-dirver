@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windows_color"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="@string/layout_title_height"
+            layout="@layout/layout_title" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/carinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 车牌号码 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_plate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_plate_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_plate"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_plate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_plate_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 货车类型 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_type_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_type"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_type_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 车辆品牌 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_brand_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_brand_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_brand"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_brand_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 车辆型号 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_model_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_model_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_model"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_model_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 设备类型 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_device_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_device_name_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_device_name"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_device_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_device_name_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 设备号 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_device_serial_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_device_serial_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_device_serial"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_device_serial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_device_serial_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_marginLeftPercent="@string/common_line_marginLeftPercent"
+                        android:background="@color/windows_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- 设备SIM过期时间 -->
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/carinfo_device_expirate_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="@string/carinfo_heightPercent"
+                    app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                    app:layout_paddingRightPercent="@string/common_paddingRightPercent"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/carinfo_device_expirate_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:layout_textSizePercent="4.5%w"
+                        android:text="@string/carinfo_device_expirate"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/carinfo_device_expirate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/carinfo_device_expirate_pre"
+                        app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                        app:layout_textSizePercent="4.5%w"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/text_normal_color" />
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/carinfo_waiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/app_color2"
+                    android:indeterminate="false" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 无消息 -->
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/carinfo_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_heightPercent="40%w"
+                    app:layout_paddingBottomPercent="5%w"
+                    app:layout_paddingLeftPercent="5%w"
+                    app:layout_paddingRightPercent="5%w"
+                    app:layout_paddingTopPercent="5%w"
+                    app:layout_widthPercent="40%w"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_nocarinfo_hint" />
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_textSizePercent="4.5%w"
+                    android:gravity="center_horizontal"
+                    android:text="暂无车辆信息"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_heightPercent="20%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

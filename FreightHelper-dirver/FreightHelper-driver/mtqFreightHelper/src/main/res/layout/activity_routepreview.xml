@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24A677"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_minHeightPercent="8.65%sh"
+        android:background="#24A677" >
+
+        <ImageView
+            android:id="@+id/title_left_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8.65%sh"
+            app:layout_paddingPercent="2.59%sh"
+            app:layout_widthPercent="8.65%sh"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title_left_img"
+            app:layout_marginRightPercent="3%sw"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp" >
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                app:layout_marginLeftPercent="2%sw"
+                app:layout_textSizePercent="@string/routeprew_title"
+                android:text="从"
+                android:textColor="#a6cdcb" />
+
+            <TextView
+                android:id="@+id/routepreview_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/title_text"
+                app:layout_textSizePercent="@string/routeprew_title"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/title_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/title_text"
+                android:layout_marginTop="2dp"
+                app:layout_marginLeftPercent="2%sw"
+                app:layout_textSizePercent="@string/routeprew_title"
+                android:text="到"
+                android:textColor="#a6cdcb" />
+
+            <TextView
+                android:id="@+id/routepreview_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/routepreview_start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/title_text1"
+                app:layout_textSizePercent="@string/routeprew_title"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/scanrecord_list_title_bg" >
+    </FrameLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="33%sw"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_routeprew_bussinessroute"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="6.1%sw"
+            app:layout_textSizePercent="3.5%sw"
+            app:layout_widthPercent="19%sw"
+            android:background="#30babc"
+            android:gravity="center"
+            android:text="企业路线"
+            android:textColor="#e0f2f3" />
+
+        <TextView
+            android:id="@+id/routeprew_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:layout_marginLeftPercent="4.2%sw"
+            app:layout_marginTopPercent="4.2%sw"
+            app:layout_textSizePercent="4.5%sw"
+            android:text="45公里"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/routeprew_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/routeprew_distance"
+            app:layout_marginLeftPercent="4.2%sw"
+            app:layout_marginTopPercent="4.2%sw"
+            app:layout_textSizePercent="4.5%sw"
+            android:text="1小时45分钟"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/routeprew_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/routeprew_distance"
+            app:layout_marginLeftPercent="4.2%sw"
+            app:layout_marginTopPercent="3%sw"
+            app:layout_textSizePercent="3.7%sw"
+            android:text="检查站："
+            android:textColor="@color/text_normal_color2" />
+
+        <TextView
+            android:id="@+id/routeprew_station_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/routeprew_distance"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/routeprew_station"
+            app:layout_marginTopPercent="3%sw"
+            app:layout_textSizePercent="3.7%sw"
+            android:text="0个"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/routeprew_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/routeprew_distance"
+            android:layout_toRightOf="@+id/routeprew_station_num"
+            app:layout_marginLeftPercent="6.5%sw"
+            app:layout_marginTopPercent="3%sw"
+            app:layout_textSizePercent="3.7%sw"
+            android:text="关注限行："
+            android:textColor="@color/text_normal_color2" />
+
+        <TextView
+            android:id="@+id/routeprew_limit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/routeprew_distance"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/routeprew_limit"
+            app:layout_marginTopPercent="3%sw"
+            app:layout_textSizePercent="3.7%sw"
+            android:text="0个"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/routeprew_limit"
+            app:layout_marginTopPercent="3.5%sw"
+            android:background="@color/black2" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_routeprew_navigate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line"
+            app:layout_paddingLeftPercent="4%sw"
+            app:layout_paddingRightPercent="4%sw"
+            app:layout_widthPercent="33%sw"
+            android:background="@drawable/selector_routeprew_btn_bg" >
+
+            <TextView
+                android:id="@+id/tv_routeprew_navigate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.4%sw"
+                android:text="开始导航"
+                android:textColor="#00be3a" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_routeprew_navigate"
+                app:layout_heightPercent="7.8%sw"
+                app:layout_marginRightPercent="1%sw"
+                app:layout_widthPercent="7.8%sw"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_navigate" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_routeprew_simunlation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/rl_routeprew_navigate"
+            app:layout_paddingLeftPercent="4%sw"
+            app:layout_paddingRightPercent="4%sw"
+            app:layout_widthPercent="31%sw"
+            android:background="@drawable/selector_routeprew_btn_bg" >
+
+            <TextView
+                android:id="@+id/tv_routeprew_simunlation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:layout_textSizePercent="4.4%sw"
+                android:text="模拟导航"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_routeprew_simunlation"
+                app:layout_heightPercent="5.6%sw"
+                app:layout_marginRightPercent="1%sw"
+                app:layout_widthPercent="5.6%sw"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_simunlation" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

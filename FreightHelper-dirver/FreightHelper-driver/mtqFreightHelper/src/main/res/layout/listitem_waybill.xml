@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <TextView android:id="@+id/waybill_list_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/scanrecord_list_title"
+        android:background="@color/scanrecord_list_title_bg"
+        app:layout_textSizePercent = "2%sh"
+        app:layout_heightPercent = "4.1%sh"
+      	style="@style/ScanRecordListStyle"
+      />
+    <com.zhy.android.percent.support.PercentLinearLayout 
+	       android:layout_width="match_parent"
+	       android:layout_height="0dp"
+	       style="@style/ScanRecordListStyle"
+	       android:background="@color/white"
+	       app:layout_heightPercent = "16.7%sh"
+	       android:orientation="vertical"
+        >
+        
+       <com.zhy.android.percent.support.PercentRelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        app:layout_heightPercent = "5.72%sh"
+         >
+         <ImageView android:id="@+id/waybill_list_item_img"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentBottom="true"
+             android:src="@drawable/ic_scan_record_codebar"
+             android:scaleType="centerInside"
+             app:layout_widthPercent = "5.74%sw"
+             app:layout_heightPercent = "3.5%sw"
+             android:layout_marginBottom="3dp"
+             android:layout_marginLeft="5dp"             
+             />
+         <TextView android:id="@+id/waybill_list_item_number"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_maxWidthPercent = "68%sw"
+             app:layout_textSizePercent ="3.89%sw"
+             app:layout_marginLeftPercent = "4.8%sw"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@+id/waybill_list_item_img"
+             android:ellipsize="end"
+             android:textColor="@color/black"
+             android:singleLine="true"
+             />
+         <TextView android:id="@+id/waybill_list_item_uploadresult"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/scanrecord_list_uploadresult"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             app:layout_textSizePercent ="3.89%sw"
+          
+           />
+        
+       </com.zhy.android.percent.support.PercentRelativeLayout>
+       
+       <com.zhy.android.percent.support.PercentRelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        app:layout_heightPercent = "3.54%sh"
+         >
+         
+         <TextView android:id="@+id/waybill_list_item_address"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="地址："
+             app:layout_textSizePercent ="3.89%sw"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentBottom="true"
+             android:textColor="@color/scanrecord_list_uploadresult"
+             />
+         <TextView android:id="@+id/waybill_list_item_addressName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:ellipsize="end"
+             android:textColor="@color/black"
+             android:singleLine="true"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@id/waybill_list_item_address"
+             app:layout_textSizePercent ="3.89%sw"
+             app:layout_maxWidthPercent = "68%sw"
+           />
+       </com.zhy.android.percent.support.PercentRelativeLayout>
+       
+       <com.zhy.android.percent.support.PercentRelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        app:layout_heightPercent = "3.54%sh"
+         >
+         
+         <TextView android:id="@+id/waybill_list_item_timename"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="日期："
+             app:layout_textSizePercent ="3.89%sw"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentBottom="true"
+             android:textColor="@color/scanrecord_list_uploadresult"
+             />
+         <TextView android:id="@+id/waybill_list_item_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/black"
+             android:layout_alignParentBottom="true"
+             android:layout_toRightOf="@id/waybill_list_item_timename"
+             app:layout_textSizePercent ="3.89%sw"
+           />
+       </com.zhy.android.percent.support.PercentRelativeLayout>
+        
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    
+ </com.zhy.android.percent.support.PercentLinearLayout>

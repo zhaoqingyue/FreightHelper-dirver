@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%sw"
+        app:layout_widthPercent="35%sw" >
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_textSizePercent="4%sw"
+            android:background="@drawable/retangle_background_gray_white"
+            android:gravity="center"
+            android:text="客户拒绝签收"
+            android:textColor="@color/black1" />
+
+        <ImageView
+            android:id="@+id/iv_reason"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:layout_heightPercent="4.5%sw"
+            app:layout_widthPercent="4.5%sw"
+            android:paddingRight="0dp"
+            android:src="@drawable/icon_feedback_mark"
+            android:visibility="gone" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

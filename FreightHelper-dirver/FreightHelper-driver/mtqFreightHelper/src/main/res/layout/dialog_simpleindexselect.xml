@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    
+    
+    <com.zhy.android.percent.support.PercentLinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="7%w"
+        app:layout_marginRightPercent="7%w"
+        android:background="@drawable/round_background_white_full_normal"
+        android:orientation="vertical" >
+        
+     
+        
+        
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    
+</com.zhy.android.percent.support.PercentFrameLayout>

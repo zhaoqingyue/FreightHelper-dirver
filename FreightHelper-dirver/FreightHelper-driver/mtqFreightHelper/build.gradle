@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    signingConfigs {
+        debug {
+            storeFile file('../../../keystore/debug.keystore')
+
+        }
+        release {
+            storeFile file('../../../keystore/careland.keystore')
+            keyPassword 'careland2012'
+            storePassword 'careland2012'
+            keyAlias 'careland'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.yunbaba.freighthelper"
+        multiDexEnabled true
+        minSdkVersion 16
+        targetSdkVersion 25
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+
+    }
+
+    buildTypes {
+        release {
+
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            buildConfigField "boolean", "IS_TESTVERSION", "false"
+
+            buildConfigField "boolean", "CLD_CRASH_REPORT", "true"
+
+            //混淆
+            minifyEnabled true
+
+            //去除无用的resource
+            shrinkResources true
+
+            //Zipalign优化
+            zipAlignEnabled true
+            proguardFiles 'proguard-project.txt'
+            signingConfig signingConfigs.release
+        }
+
+
+        debug {
+            // minifyEnabled true
+            //shrinkResources true
+            //zipAlignEnabled true
+
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            buildConfigField "boolean", "IS_TESTVERSION", "true"
+
+            buildConfigField "boolean", "CLD_CRASH_REPORT", "false"
+
+            minifyEnabled false
+
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compile project(':cldOlsHuoyun')
+    compile project(':NiceSpinner')
+    //  compile project(':fragmentation')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    //  compile 'com.android.support:multidex:'
+    //   compile 'com.android.support:support-v4:23.4.0'
+    compile 'me.yokeyword:fragmentation:1.2.4'
+    //   compile 'me.yokeyword:fragmentation-swipeback:1.2.4'
+    //   compile 'me.yokeyword:eventbus-activity-scope:1.1.0'
+    compile files('libs/android-support-percent.jar')
+    compile files('libs/bugly_crash_release.jar')
+    // compile files('libs/butterknife-7.0.1.jar')
+    compile files('libs/eventbus_3.0.0.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/region_v1.0.0.jar')
+     compile files('libs/SaaS_AppAnalytics_Android_SDK_V4.0.8.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/zxing-core-3.2.1.jar')
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'am.util:viewpager:25.0.0'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    //compile 'com.android.support:recyclerview-v7:25.0.0'
+    //  compile 'com.github.markzhai:blockcanary-android:1.5.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.android.support.constraint:constraint-layout:1.1.1'
+
+    // 沉浸式管理
+    //compile 'com.gyf.barlibrary:barlibrary:2.2.9'
+
+}

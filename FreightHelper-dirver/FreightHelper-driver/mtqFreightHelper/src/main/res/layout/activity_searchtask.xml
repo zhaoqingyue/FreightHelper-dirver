@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:clipToPadding="true"
+        app:layout_heightPercent="9%sh">
+
+
+        <ImageView
+            android:id="@+id/iv_titleleft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back"
+            android:visibility="gone"
+            app:layout_heightPercent="100%h"
+            app:layout_paddingPercent="30%h"
+            app:layout_widthPercent="100%h" />
+
+
+        <!--android:layout_toRightOf="@+id/iv_titleleft"-->
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/round_background_windowcolor_full"
+            app:layout_marginLeftPercent="30%h"
+            app:layout_marginBottomPercent="15%h"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_titleright"
+            app:layout_marginTopPercent="15%h"
+            android:layout_height="match_parent">
+
+
+            <!--0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM-->
+
+            <com.yunbaba.freighthelper.ui.customview.SearchCleanEditText
+                android:id="@+id/et_search"
+                android:layout_toRightOf="@+id/iv_search_empty"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+
+                android:focusable="true"
+
+                android:background="@color/transparent"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+                android:gravity="left|center_vertical"
+                android:hint="@string/search_task"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/black_text"
+                android:textColorHint="@color/tasklist_text_color"
+                android:textCursorDrawable="@drawable/shape_edit_cursor"
+                android:inputType="number"
+                app:layout_paddingLeftPercent="0%w"
+                app:layout_paddingRightPercent="3%w"
+                app:layout_textSizePercent="4%sw" />
+
+            <ImageView
+                android:id="@+id/iv_search_empty"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="0dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_search_hint"
+                app:layout_heightPercent="100%h"
+                app:layout_paddingPercent="35%h"
+                app:layout_widthPercent="100%h" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_titleright"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="@color/black_text"
+            android:visibility="visible"
+            app:layout_textSizePercent="4.5%sw"
+            app:layout_widthPercent="17.5%w" />
+
+
+        <View
+            android:background="@color/tasklist_stroke"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/windows_color"
+            android:divider="#00ffffff"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:indeterminateTint="@color/app_color2"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

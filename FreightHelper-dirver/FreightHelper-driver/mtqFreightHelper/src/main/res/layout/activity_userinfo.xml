@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="@string/layout_title_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/windows_color"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 头像 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_avatar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_avatar_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_avatar"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <com.yunbaba.freighthelper.ui.customview.CircleImageView
+                    android:id="@+id/userinfo_avatar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/userinfo_avatar_arrow"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/userinfo_avatar"
+                    app:layout_heightPercent="60%h"
+                    app:layout_marginRightPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_widthPercent="60%h" />
+
+                <ImageView
+                    android:id="@+id/userinfo_avatar_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/windows_color"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 昵称 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_nickname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:id="@+id/userinfo_nickname_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_nickname"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/userinfo_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/userinfo_nickname_arrow"
+                    android:layout_toRightOf="@+id/userinfo_nickname_pre"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_normal_color"
+                    app:layout_marginLeftPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_marginRightPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <ImageView
+                    android:id="@+id/userinfo_nickname_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/windows_color"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 账号 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_account"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/userinfo_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/text_normal_color"
+                    app:layout_marginRightPercent="3%w"
+                    app:layout_textSizePercent="4.5%w" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/windows_color"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 区域 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:id="@+id/userinfo_area_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_area"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/userinfo_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/userinfo_area_arrow"
+                    android:layout_toRightOf="@+id/userinfo_area_pre"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_normal_color"
+                    app:layout_marginLeftPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_marginRightPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <ImageView
+                    android:id="@+id/userinfo_area_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/windows_color"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 性别 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_sex"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/userinfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/userinfo_sex_arrow"
+                    android:text=""
+                    android:textColor="@color/text_normal_color"
+                    app:layout_marginRightPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <ImageView
+                    android:id="@+id/userinfo_sex_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 绑定手机 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_mobile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_marginTopPercent="@string/common_marginTopPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_mobile"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <TextView
+                    android:id="@+id/userinfo_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/userinfo_mobile_arrow"
+                    android:text=""
+                    android:textColor="@color/text_normal_color"
+                    app:layout_marginRightPercent="@string/userinfo_arrow_marginRightPercent"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <ImageView
+                    android:id="@+id/userinfo_mobile_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/windows_color"
+                    app:layout_marginLeftPercent="@string/common_line_marginLeftPercent" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 修改密码 -->
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/userinfo_modify_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/selector_bth_white_bg"
+                app:layout_heightPercent="@string/userinfo_heightPercent"
+                app:layout_paddingLeftPercent="@string/common_paddingLeftPercent"
+                app:layout_paddingRightPercent="@string/common_paddingRightPercent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/userinfo_modify_pwd"
+                    android:textColor="@color/black"
+                    app:layout_textSizePercent="4.5%w" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_right" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- 退出登录 -->
+
+            <Button
+                android:id="@+id/userinfo_logout_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_bth_red_bg"
+                android:text="@string/userinfo_logout"
+                android:textColor="@drawable/selector_bth_red_text"
+                app:layout_heightPercent="9%h"
+                app:layout_marginTopPercent="5%h"
+                app:layout_textSizePercent="6%w"
+                app:layout_widthPercent="80%w" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
